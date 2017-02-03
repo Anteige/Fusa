@@ -2,7 +2,7 @@
 /// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.h
-/// \date			02/02/2017
+/// \date			02/02/2017 - MAJ 03/02/2017
 /// \description	Definition de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
