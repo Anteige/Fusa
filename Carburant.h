@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa v.1 alpha
+/// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Carburant.h
 /// \date			02/02/2017
@@ -16,19 +16,12 @@ using namespace std;
 class Carburant
 {
 public:
-	// Constructeur par defaut.
+	// Constructeurs.
 	Carburant();
 
-	// Constructeur par defaut.
-	~Carburant();
-
-	// Constructeur par parametres.
-	Donnee(string nom, double valeur, string unite);
-
 	// Methodes d'acces.
-	string	obtenirNom()	const;
-	double	obtenirValeur() const;
-	string	obtenirUnite()	const;
+	string	obtenirMasse()		const;
+	double	obtenirPression()	const;
 
 	// Methodes de modifications.
 	void	mettreNom(string nom);
