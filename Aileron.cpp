@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa v.1 alpha
+/// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.cpp
 /// \date			02/02/2017
@@ -16,38 +16,14 @@
 ********************************************************************************/
 Aileron::Aileron()
 {
-	//TODO
 }
 
 /*******************************************************************************
-* Fonction:		Aileron::~Aileron
-* Description:	Destructeur
+* Fonction:		Aileron::obtenirForce
+* Description:	accessor de nom_
 * Paramètres:	aucun
-* Retour:		aucun
+* Retour:		(string) le nom de la donnee
 ********************************************************************************/
-Aileron::~Aileron()
-{
-
-}
-
-/*******************************************************************************
-* Fonction:		Aileron::Aileron
-* Description:	Constructeur par parametres
-* Paramètres:	- (Donnee) force :			a initialiser (IN)
-				- (Donnee) resistance :		a initialiser (IN)
-				- (Donnee) aire :			a initialiser (IN)
-				- (String) forme :			a initialiser (IN)
-* Retour:		aucun
-********************************************************************************/
-Aileron::Aileron(Donnee force, Donnee resistance, Donnee aire, string forme)
-{
-	force_ = force;
-	resistance_ = resistance;
-	aire_ = aire;
-	forme_ = forme;
-	//TODO : ajouter C.G.
-}
-
 Donnee Aileron::obtenirForce() const
 {
 	return force_;
