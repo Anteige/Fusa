@@ -1,0 +1,10 @@
+﻿  Moteur.cpp
+  main.cpp
+  Donnee.cpp
+  Cylindre.cpp
+  Aileron.cpp
+  Génération de code en cours...
+Aileron.obj : error LNK2019: symbole externe non résolu "public: __thiscall Donnee::~Donnee(void)" (??1Donnee@@QAE@XZ) référencé dans la fonction __unwindfunclet$??0Aileron@@QAE@XZ$0
+Cylindre.obj : error LNK2001: symbole externe non résolu "public: __thiscall Donnee::~Donnee(void)" (??1Donnee@@QAE@XZ)
+Moteur.obj : error LNK2001: symbole externe non résolu "public: __thiscall Donnee::~Donnee(void)" (??1Donnee@@QAE@XZ)
+C:\Users\Antoine Gaulin\Documents\Visual Studio 2017\Projects\TeamSkyreachers\Debug\Fusa.exe : fatal error LNK1120: 1 externes non résolus
