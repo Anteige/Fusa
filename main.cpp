@@ -13,6 +13,7 @@
 
 #include "Donnee.h"
 #include "Cylindre.h"
+#include "Carburant.h"
 
 #pragma comment(lib, "winmm.lib")
 

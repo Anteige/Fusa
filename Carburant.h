@@ -20,18 +20,20 @@ public:
 	Carburant();
 
 	// Methodes d'acces.
-	string	obtenirMasse()		const;
-	double	obtenirPression()	const;
+	Donnee	obtenirMasse()		const;
+	Donnee	obtenirPression()	const;
+	Donnee	obtenirPoussee()	const;
 
 	// Methodes de modifications.
-	void	mettreNom(string nom);
-	void	mettreValeur(double nom);
-	void	mettreUnite(string unite);
+	void	mettreMasse(Donnee masse);
+	void	mettrePression(Donnee pression);
+	void	mettrePoussee(Donnee poussee);
 
 private:
 	// Attributs
 	Donnee	masse_;
 	Donnee	pression_;
+	Donnee	poussee_;
 };
 
 #endif // _CARBURANT_H_
