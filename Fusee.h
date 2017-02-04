@@ -10,7 +10,7 @@
 #define _FUSEE_H_
 
 #include "Aileron.h"
-#include "Cylindre.h"
+#include "Carburant.h"
 #include "Donnee.h"
 
 using namespace std;
@@ -29,7 +29,6 @@ public:
 
 private:
 	// Attributs
-	Cylindre	cylindre_;
 	Aileron*	ailerons_;
 	Donnee		masse_;
 };
