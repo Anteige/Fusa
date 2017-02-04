@@ -236,37 +236,96 @@ void setcursor(bool visible, DWORD size) // set bool visible = 0 - invisible, bo
 
 void afficherIntroduction() {
 
-	cout << "################################################################################" << endl << endl
-		 << "  ==================   ======       ======   ==================     =========" << endl
-		 << " |                 |   |    |       |    |   |                |    |         |" << endl
-		 << " |      ===========    |    |       |    |   |       =========    |     |     |" << endl
-		 << " |      |              |    |       |    |   |       |           |    |   |    | " << endl
-		 << " |      ===========    |    |       |    |   |       ========    |    =====     |" << endl
-		 << " |                 |   |    |       |    |   |               |   |    _____     |" << endl
-		 << " |      ===========    |    |       |    |   |_______        |   |    |    |    |" << endl
-		 << " |      |              |    |       |    |           |       |   |    |    |    |" << endl
-	 	 << " |      |              |    |       |    |   =========       |   |    |    |    |" << endl
-		 << " |      |              |    |=======|    |   |               |   |    |    |    |" << endl
-		 << "  ______               __________________    ________________    _____      _____" << endl << endl
-		 << "#################################################################################" << endl << endl
-		<< "		!| Entreprendre les calculs de fusees autrement |!" << endl << endl << endl << endl;
+		for (int i = 0; i < 7; i++) {
 
+			cout << "		######################################################################################" << endl << endl
+				<< "		   ==================   ======       ======   ==================      =========" << endl
+				<< "		  |                 |   |    |       |    |   |                |     |         |" << endl
+				<< "		  |      ===========    |    |       |    |   |       =========     |     |     |" << endl
+				<< "		  |      |              |    |       |    |   |       |            |    |   |    | " << endl
+				<< "		  |      ===========    |    |       |    |   |       ========     |    =====     |" << endl
+				<< "		  |                 |   |    |       |    |   |               |    |    _____     |" << endl
+				<< "		  |      ===========    |    |       |    |   |_______        |    |    |    |    |" << endl
+				<< "		  |      |              |    |       |    |           |       |    |    |    |    |" << endl
+				<< "		  |      |              |    |       |    |   =========       |    |    |    |    |" << endl
+				<< "		  |      |              |    |=======|    |   |               |    |    |    |    |" << endl
+				<< "		   ______               __________________    ________________     _____      _____" << endl << endl
+				<< "		######################################################################################" << endl << endl
+				<< "		!| Entreprendre les calculs de fusees autrement |!" << endl << endl << endl << endl;
 
+			if (i == 0) {
+				cout << "	~ ]|\\       [\\ " << endl
+					<< "	 ~ }|)))))))))))))))>" << endl
+					<< "	~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
+					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(400);
+				setcursor(0, 0);
+				NettoyerConsole(1);
+			}
 
-	Sleep(3000);
-	NettoyerConsole(1);
-}
+			if (i == 1) {
+				cout << "			~ ]|\\       [\\ " << endl
+					<< "			~  }|)))))))))))))))>" << endl
+					<< "			~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
+					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(770);
+				NettoyerConsole(1);
+			}
+
+			if (i == 2) {
+				cout << "					~ ]|\\       [\\ " << endl
+					<< "					 ~ }|)))))))))))))))>" << endl
+					<< "					~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
+					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(400);
+				NettoyerConsole(1);
+			}
+
+			if (i == 3) {
+				cout << "						~ ]|\\       [\\ " << endl
+					<< "						~  }|)))))))))))))))>" << endl
+					<< "						~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
+					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(450);;
+				NettoyerConsole(1);
+			}
+
+			if (i == 4) {
+				cout << "								~ ]|\\       [\\ " << endl
+					<< "								 ~ }|)))))))))))))))>" << endl
+					<< "								~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
+					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(450);
+				NettoyerConsole(1);
+			}
+
+			if (i == 5) {
+				cout << "										~ ]|\\       [\\ " << endl
+					<< "									 	~  }|)))))))))))))))>" << endl
+					<< "										~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
+					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(1300);
+				NettoyerConsole(1);
+			}
+
+			if (i == 6) {
+				cout << endl
+					<< "						Decollage reussi!" << endl
+					<< endl;
+			}
+		}
+		Sleep(4000);
+		NettoyerConsole(1);
+	}
 
 #pragma endregion fonctions
 
 int main() {
-
 	DefinirLaPolice();
-
 	cout << "Initialisation..." << endl;
 	Sleep(300);
 
-	MoveWindow(GetConsoleWindow(), 50, 50, 620, 460, TRUE);
+	MoveWindow(GetConsoleWindow(), 50, 50, 850, 460, TRUE);
 	Sleep(500);
 
 	NettoyerConsole(1);

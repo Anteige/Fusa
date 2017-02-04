@@ -19,9 +19,6 @@ public:
 	// Constructeur par defaut.
 	Donnee();
 
-	// Constructeur par defaut.
-	~Donnee();
-
 	// Constructeur par parametres.
 	Donnee(string nom, double valeur, string unite);
 
