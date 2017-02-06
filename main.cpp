@@ -1,4 +1,4 @@
-﻿////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 /// Fusa v.1 alpha
 /// \auteur			Antoine Gaulin
 /// \fichier		main.cpp
@@ -19,6 +19,13 @@
 using namespace std;
 
 #pragma region Affichage
+
+string chaineDeTablatures(unsigned nTabs) {
+	string chaine = "";
+	for (unsigned i = 0; i < nTabs; ++i)
+		chaine += '\t';
+	return chaine;
+}
 
 void DefinirLaPolice()
 {
@@ -87,78 +94,85 @@ void afficherIntroduction() {
 		for (int i = 0; i < 7; i++) {
 
 			cout << "		######################################################################################" << endl << endl
-				<< "		   ==================   ======       ======   ==================      =========" << endl
-				<< "		  |                 |   |    |       |    |   |                |     |         |" << endl
-				<< "		  |      ===========    |    |       |    |   |       =========     |     |     |" << endl
-				<< "		  |      |              |    |       |    |   |       |            |    |   |    | " << endl
-				<< "		  |      ===========    |    |       |    |   |       ========     |    =====     |" << endl
-				<< "		  |                 |   |    |       |    |   |               |    |    _____     |" << endl
-				<< "		  |      ===========    |    |       |    |   |_______        |    |    |    |    |" << endl
-				<< "		  |      |              |    |       |    |           |       |    |    |    |    |" << endl
-				<< "		  |      |              |    |       |    |   =========       |    |    |    |    |" << endl
-				<< "		  |      |              |    |=======|    |   |               |    |    |    |    |" << endl
-				<< "		   ______               __________________    ________________     _____      _____" << endl << endl
+				<< "		   ==================   ======       ======   ==================      ========="		<< endl
+				<< "		  |                 |   |    |       |    |   |                |     |         |"		<< endl
+				<< "		  |      ===========    |    |       |    |   |       =========     |     |     |"		<< endl
+				<< "		  |      |              |    |       |    |   |       |            |    |   |    | "	<< endl
+				<< "		  |      ===========    |    |       |    |   |       ========     |    =====     |"	<< endl
+				<< "		  |                 |   |    |       |    |   |               |    |    _____     |"	<< endl
+				<< "		  |      ===========    |    |       |    |   |_______        |    |    |    |    |"	<< endl
+				<< "		  |      |              |    |       |    |           |       |    |    |    |    |"	<< endl
+				<< "		  |      |              |    |       |    |   =========       |    |    |    |    |"	<< endl
+				<< "		  |      |              |    |=======|    |   |               |    |    |    |    |"	<< endl
+				<< "		   ______               __________________    ________________     _____      _____"	<< endl << endl
 				<< "		######################################################################################" << endl << endl
-				<< "		!| Entreprendre les calculs de fusees autrement |!" << endl << endl << endl << endl;
+				<< "		!| Entreprendre les calculs de fusees autrement |!"										<< endl << endl << endl << endl;
 
 			if (i == 0) {
-				cout << "	~ ]|\\       [\\ " << endl
-					<< "	 ~ }|)))))))))))))))>" << endl
-					<< "	~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
-					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				cout << chaineDeTablatures(1) << "~ ]|\\       [\\ "		<< endl
+					 << chaineDeTablatures(1) << " ~ }|)))))))))))))))>"	<< endl
+					 << chaineDeTablatures(1) << "~ ]|/       [/   "		<< endl << endl << endl << endl << endl << endl
+					 << chaineDeTablatures(1) << "version 2.0 Alpha "
+					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
 				Sleep(400);
 				setcursor(0, 0);
 				NettoyerConsole(1);
 			}
 
 			if (i == 1) {
-				cout << "			~ ]|\\       [\\ " << endl
-					<< "			~  }|)))))))))))))))>" << endl
-					<< "			~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
-					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
-				Sleep(770);
+				cout << chaineDeTablatures(2) << "~ ]|\\       [\\ "		<< endl
+					 << chaineDeTablatures(2) << " ~ }|)))))))))))))))>"	<< endl
+					 << chaineDeTablatures(2) << "~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
+					 << chaineDeTablatures(1) << "version 2.0 Alpha " 
+					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(760);
 				NettoyerConsole(1);
 			}
 
 			if (i == 2) {
-				cout << "					~ ]|\\       [\\ " << endl
-					<< "					 ~ }|)))))))))))))))>" << endl
-					<< "					~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
-					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				cout << chaineDeTablatures(4) << "~ ]|\\       [\\ "		<< endl
+					 << chaineDeTablatures(4) << " ~ }|)))))))))))))))>"	<< endl
+					 << chaineDeTablatures(4) << "~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
+					 << chaineDeTablatures(1) << "version 2.0 Alpha "
+					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
 				Sleep(400);
 				NettoyerConsole(1);
 			}
 
 			if (i == 3) {
-				cout << "						~ ]|\\       [\\ " << endl
-					<< "						~  }|)))))))))))))))>" << endl
-					<< "						~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
-					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
-				Sleep(450);;
+				cout << chaineDeTablatures(5) << "~ ]|\\       [\\ "		<< endl
+					 << chaineDeTablatures(5) << " ~ }|)))))))))))))))>"	<< endl
+					 << chaineDeTablatures(5) << "~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
+					 << chaineDeTablatures(1) << "version 2.0 Alpha "
+					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(440);;
 				NettoyerConsole(1);
 			}
 
 			if (i == 4) {
-				cout << "								~ ]|\\       [\\ " << endl
-					<< "								 ~ }|)))))))))))))))>" << endl
-					<< "								~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
-					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
-				Sleep(450);
+				cout << chaineDeTablatures(7) << "  ~ ]|\\       [\\ "		<< endl
+					 << chaineDeTablatures(7) << "   ~ }|)))))))))))))))>"	<< endl
+					 << chaineDeTablatures(7) << "  ~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
+					 << chaineDeTablatures(1) << "version 2.0 Alpha "
+					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(320);
 				NettoyerConsole(1);
 			}
+			
 
 			if (i == 5) {
-				cout << "										~ ]|\\       [\\ " << endl
-					<< "									 	~  }|)))))))))))))))>" << endl
-					<< "										~ ]|/       [/ " << endl << endl << endl << endl << endl << endl
-					<< "	version 2.0 Alpha				 Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				cout << chaineDeTablatures(10) << "~ ]|\\       [\\ "		<< endl
+					 << chaineDeTablatures(10) << " ~ }|)))))))))))))))>"	<< endl
+					 << chaineDeTablatures(10) << "~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
+					 << chaineDeTablatures(1) << "version 2.0 Alpha "
+					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
 				Sleep(1300);
 				NettoyerConsole(1);
 			}
 
 			if (i == 6) {
 				cout << endl
-					<< "						Decollage reussi!" << endl
+					<< chaineDeTablatures(6) <<"Decollage reussi!" << endl
 					<< endl;
 			}
 		}
