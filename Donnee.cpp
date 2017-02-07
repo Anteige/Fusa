@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa
+/// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Donnee.cpp
-/// \date			31/01/2017 - MAJ 02/02/2017
+/// \date			31/01/2017 - MAJ 07/02/2017
 /// \description	Implementation de la classe Donnee
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -24,9 +24,9 @@ Donnee::Donnee()
 /*******************************************************************************
 * Fonction:		Donnee::Donnee
 * Description:	Constructeur par parametres
-* Paramètres:	- (string) nom :		a initialiser (IN)
-				- (double) valeur :		a initialiser (IN)
-				- (string) unite :		a initialiser (IN)
+* Paramètres:	- (string) nom :			a initialiser (IN)
+				- (double) valeur :			a initialiser (IN)
+				- (string) unite :			a initialiser (IN)
 * Retour:		aucun
 ********************************************************************************/
 Donnee::Donnee(string nom, double valeur, string unite)
