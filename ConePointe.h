@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa
+/// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		ConePointe.h
 /// \date			07/02/2017
@@ -9,30 +9,28 @@
 #ifndef _CONEPOINTE_H_
 #define _CONEPOINTE_H_
 
+#include "ObjetPhysique.h"
 #include "Donnee.h"
 
 using namespace std;
 
-class ConePointe
+class ConePointe : ObjetPhysique
 {
 public:
 	// Constructeurs.
 	ConePointe();
 
 	// Methodes d'acces.
-	Donnee	obtenirMasse()		const;
-	Donnee	obtenirResistance()	const;
 	string	obtenirForme()		const;
+	Donnee	obtenirResistance()	const;
 
 	// Methodes de modifications.
-	void	mettreMasse(Donnee masse);
-	void	mettreResistance(Donnee resistance);
 	void	mettreForme(string forme);
+	void	mettreResistance(Donnee resistance);
 
 private:
 	// Attributs
 	Donnee	resistance_;
-	Donnee	masse_;
 	string	forme_;
 };
 
