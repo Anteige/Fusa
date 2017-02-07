@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa			v1
+/// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Carburant.h
 /// \date			02/02/2017 - MAJ 07/02/2017
