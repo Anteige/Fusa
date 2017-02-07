@@ -21,24 +21,23 @@ public:
 	Aileron();
 
 	// Methodes d'acces.
-	Donnee	obtenirForce()		const;
-	Donnee	obtenirResistance()	const;
 	Donnee	obtenirAire()		const;
+	Donnee	obtenirForce()		const;
 	string	obtenirForme()		const;
+	Donnee	obtenirResistance()	const;
 
 	// Methodes de modifications.
-	void	mettreForce(Donnee force);
-	void	mettreResistance(Donnee resistance);
 	void	mettreAire(Donnee aire);
+	void	mettreForce(Donnee force);
 	void	mettreForme(string forme);
-
+	void	mettreResistance(Donnee resistance);
 
 private:
 	// Attributs
-	Donnee	force_;
-	Donnee	resistance_;
 	Donnee	aire_;
+	Donnee	force_;
 	string	forme_;
+	Donnee	resistance_;
 };
 
 #endif // _AILERON_H_

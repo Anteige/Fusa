@@ -13,6 +13,8 @@
 
 using namespace std;
 
+enum Axes { AXE_X, AXE_Y, AXE_Z, N_AXES };
+
 class ObjetPhysique
 {
 public:

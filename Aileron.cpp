@@ -2,7 +2,7 @@
 /// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.cpp
-/// \date			02/02/2017 - MAJ 03/02/2017
+/// \date			02/02/2017 - MAJ 07/02/2017
 /// \description	Implementation de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -19,28 +19,6 @@ Aileron::Aileron()
 }
 
 /*******************************************************************************
-* Fonction:		Aileron::obtenirForce
-* Description:	accessor de force_
-* Paramètres:	aucun
-* Retour:		(Donnee) la force de l'aileron
-********************************************************************************/
-Donnee Aileron::obtenirForce() const
-{
-	return force_;
-}
-
-/*******************************************************************************
-* Fonction:		Aileron::obtenirResistance
-* Description:	accessor de resistance_
-* Paramètres:	aucun
-* Retour:		(Donnee) la resistance de l'aileron
-********************************************************************************/
-Donnee Aileron::obtenirResistance() const
-{
-	return resistance_;
-}
-
-/*******************************************************************************
 * Fonction:		Aileron::obtenirAire
 * Description:	accessor de aire_
 * Paramètres:	aucun
@@ -49,6 +27,17 @@ Donnee Aileron::obtenirResistance() const
 Donnee Aileron::obtenirAire() const
 {
 	return aire_;
+}
+
+/*******************************************************************************
+* Fonction:		Aileron::obtenirForce
+* Description:	accessor de force_
+* Paramètres:	aucun
+* Retour:		(Donnee) la force de l'aileron
+********************************************************************************/
+Donnee Aileron::obtenirForce() const
+{
+	return force_;
 }
 
 /*******************************************************************************
@@ -63,31 +52,20 @@ string Aileron::obtenirForme() const
 }
 
 /*******************************************************************************
-* Fonction:		Aileron::mettreForce
-* Description:	mutator de force_
-* Paramètres:	- (Donnee) force :		a modifier (IN)
-* Retour:		aucun
+* Fonction:		Aileron::obtenirResistance
+* Description:	accessor de resistance_
+* Paramètres:	aucun
+* Retour:		(Donnee) la resistance de l'aileron
 ********************************************************************************/
-void Aileron::mettreForce(Donnee force)
+Donnee Aileron::obtenirResistance() const
 {
-	force_ = force;
-}
-
-/*******************************************************************************
-* Fonction:		mettreResistance
-* Description:	mutator de resistance_
-* Paramètres:	- (Donnee) resistance :	a modifier (IN)
-* Retour:		aucun
-********************************************************************************/
-void Aileron::mettreResistance(Donnee resistance)
-{
-	resistance_ = resistance;
+	return resistance_;
 }
 
 /*******************************************************************************
 * Fonction:		Aileron::mettreAire
 * Description:	mutator de aire_
-* Paramètres:	- (Donnee) aire :		a modifier (IN)
+* Paramètres:	- (Donnee) aire :			a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Aileron::mettreAire(Donnee aire)
@@ -96,12 +74,34 @@ void Aileron::mettreAire(Donnee aire)
 }
 
 /*******************************************************************************
+* Fonction:		Aileron::mettreForce
+* Description:	mutator de force_
+* Paramètres:	- (Donnee) force :			a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void Aileron::mettreForce(Donnee force)
+{
+	force_ = force;
+}
+
+/*******************************************************************************
 * Fonction:		Aileron::mettreForme
 * Description:	mutator de forme_
-* Paramètres:	- (string) forme :		a modifier (IN)
+* Paramètres:	- (string) forme :			a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Aileron::mettreForme(string forme)
 {
 	forme_ = forme;
+}
+
+/*******************************************************************************
+* Fonction:		mettreResistance
+* Description:	mutator de resistance_
+* Paramètres:	- (Donnee) resistance :		a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void Aileron::mettreResistance(Donnee resistance)
+{
+	resistance_ = resistance;
 }
