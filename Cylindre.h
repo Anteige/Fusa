@@ -21,17 +21,17 @@ public:
 	Cylindre();
 
 	// Methodes d'acces.
-	Donnee	obtenirVolume()				const;
 	Donnee	obtenirPressionMaximale()	const;
+	Donnee	obtenirVolume()				const;
 
 	// Methodes de modifications.
-	void	mettreVolume(Donnee volume);
 	void	mettrePressionMaximale(Donnee pressionMaximale);
+	void	mettreVolume(Donnee volume);
 
 private:
 	// Attributs
-	Donnee	volume_;
 	Donnee	pressionMaximale_;
+	Donnee	volume_;
 };
 
 #endif // _Cylindre_H_

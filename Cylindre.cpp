@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa v.1 alpha
+/// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Cylindre.cpp
-/// \date			02/02/2017
+/// \date			02/02/2017 - MAJ 07/02/2017
 /// \description	Implementation de la classe Cylindre
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -19,32 +19,6 @@ Cylindre::Cylindre()
 }
 
 /*******************************************************************************
-* Fonction:		Cylindre::Cylindre
-* Description:	Constructeur par parametres
-* Paramètres:	- (Donnee) volume :					a initialiser (IN)
-				- (Donnee) pressionMaximale :		a initialiser (IN)
-				- (Donnee) masse :					a initialiser (IN)
-* Retour:		aucun
-********************************************************************************/
-Cylindre::Cylindre(Donnee volume, Donnee pressionMaximale, Donnee masse)
-{
-	volume_ = volume;
-	pressionMaximale_ = pressionMaximale;
-	masse_ = masse;
-}
-
-/*******************************************************************************
-* Fonction:		Cylindre::obtenirVolume
-* Description:	accessor de volume_
-* Paramètres:	aucun
-* Retour:		(Donnee) le volume du Cylindre
-********************************************************************************/
-Donnee Cylindre::obtenirVolume() const
-{
-	return volume_;
-}
-
-/*******************************************************************************
 * Fonction:		Cylindre::obtenirPressionMaximale
 * Description:	accessor de pressionMaximale_
 * Paramètres:	aucun
@@ -56,25 +30,14 @@ Donnee Cylindre::obtenirPressionMaximale() const
 }
 
 /*******************************************************************************
-* Fonction:		Cylindre::obtenirMasse
-* Description:	accessor de masse_
+* Fonction:		Cylindre::obtenirVolume
+* Description:	accessor de volume_
 * Paramètres:	aucun
-* Retour:		(Donnee) la masse du cylindre
+* Retour:		(Donnee) le volume du cylindre
 ********************************************************************************/
-Donnee Cylindre::obtenirMasse() const
+Donnee Cylindre::obtenirVolume() const
 {
-	return masse_;
-}
-
-/*******************************************************************************
-* Fonction:		Cylindre::mettreVolume
-* Description:	mutator de volume_
-* Paramètres:	- (Donnee) volume :					a modifier (IN)
-* Retour:		aucun
-********************************************************************************/
-void Cylindre::mettreVolume(Donnee volume)
-{
-	volume_ = volume;
+	return volume_;
 }
 
 /*******************************************************************************
@@ -89,12 +52,12 @@ void Cylindre::mettrePressionMaximale(Donnee pressionMaximale)
 }
 
 /*******************************************************************************
-* Fonction:		Cylindre::mettreMasse
-* Description:	mutator de masse_
-* Paramètres:	- (Donnee) masse :					a modifier (IN)
+* Fonction:		Cylindre::mettreVolume
+* Description:	mutator de volume_
+* Paramètres:	- (Donnee) volume :					a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void Cylindre::mettreMasse(Donnee masse)
+void Cylindre::mettreVolume(Donnee volume)
 {
-	masse_ = masse;
+	volume_ = volume;
 }
