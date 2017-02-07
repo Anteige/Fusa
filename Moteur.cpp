@@ -4,10 +4,42 @@ Moteur::Moteur()
 {
 }
 
-Moteur::Moteur(Donnee masse, Donnee poussee, Donnee temperature, string forme)
+Donnee Moteur::obtenirMasse() const
 {
+	return masse_;
 }
 
-Moteur::~Moteur()
+Donnee Moteur::obtenirPoussee() const
 {
+	return poussee_;
+}
+
+Donnee Moteur::obtenirTemperature() const
+{
+	return temperature_;
+}
+
+string Moteur::obtenirForme() const
+{
+	return forme_;
+}
+
+void Moteur::mettreMasse(Donnee masse)
+{
+	masse_ = masse;
+}
+
+void Moteur::mettrePoussee(Donnee poussee)
+{
+	poussee_ = poussee;
+}
+
+void Moteur::mettreTemperature(Donnee temperature)
+{
+	temperature_ = temperature;
+}
+
+void Moteur::mettreForme(string forme)
+{
+	forme_ = forme;
 }
