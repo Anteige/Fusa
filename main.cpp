@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa v.1 alpha
+/// Fusa			version 1 - alpha
 /// \auteur			Antoine Gaulin
 /// \fichier		main.cpp
 /// \date			31/12/2016 - MAJ 31/01/2017
