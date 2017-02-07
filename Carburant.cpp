@@ -2,7 +2,7 @@
 /// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Carburant.cpp
-/// \date			02/02/2017 - MAJ 06/02/2017
+/// \date			02/02/2017 - MAJ 07/02/2017
 /// \description	Implementation de la classe Carburant
 ////////////////////////////////////////////////////////////////////////////////
 
