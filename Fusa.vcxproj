@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="Aileron.h" />
     <ClInclude Include="Carburant.h" />
+    <ClInclude Include="ConePointe.h" />
     <ClInclude Include="Cylindre.h" />
     <ClInclude Include="Donnee.h" />
     <ClInclude Include="Fusee.h" />
@@ -157,6 +158,7 @@
   <ItemGroup>
     <ClCompile Include="Aileron.cpp" />
     <ClCompile Include="Carburant.cpp" />
+    <ClCompile Include="ConePointe.cpp" />
     <ClCompile Include="Cylindre.cpp" />
     <ClCompile Include="Donnee.cpp" />
     <ClCompile Include="Fusee.cpp" />
