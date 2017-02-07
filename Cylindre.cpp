@@ -69,7 +69,7 @@ Donnee Cylindre::obtenirMasse() const
 /*******************************************************************************
 * Fonction:		Cylindre::mettreVolume
 * Description:	mutator de volume_
-* Paramètres:	- (Donnee) volume :					a initialiser (IN)
+* Paramètres:	- (Donnee) volume :					a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Cylindre::mettreVolume(Donnee volume)
@@ -80,7 +80,7 @@ void Cylindre::mettreVolume(Donnee volume)
 /*******************************************************************************
 * Fonction:		Cylindre::mettrePressionMaximale
 * Description:	mutator de pressionMaximale_
-* Paramètres:	- (Donnee) pressionMaximale :		a initialiser (IN)
+* Paramètres:	- (Donnee) pressionMaximale :		a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Cylindre::mettrePressionMaximale(Donnee pressionMaximale)
@@ -91,7 +91,7 @@ void Cylindre::mettrePressionMaximale(Donnee pressionMaximale)
 /*******************************************************************************
 * Fonction:		Cylindre::mettreMasse
 * Description:	mutator de masse_
-* Paramètres:	- (Donnee) masse :					a initialiser (IN)
+* Paramètres:	- (Donnee) masse :					a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Cylindre::mettreMasse(Donnee masse)

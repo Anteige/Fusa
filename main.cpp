@@ -113,20 +113,18 @@ void afficherIntroduction() {
 					 << chaineDeTablatures(1) << " ~ }|)))))))))))))))>"	<< endl
 					 << chaineDeTablatures(1) << "~ ]|/       [/   "		<< endl << endl << endl << endl << endl << endl
 					 << chaineDeTablatures(1) << "version 2.0 Alpha "
-					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				 	 << chaineDeTablatures(4) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
 				Sleep(400);
 				setcursor(0, 0);
-				NettoyerConsole(1);
 			}
 
 			if (i == 1) {
 				cout << chaineDeTablatures(2) << "~ ]|\\       [\\ "		<< endl
 					 << chaineDeTablatures(2) << " ~ }|)))))))))))))))>"	<< endl
 					 << chaineDeTablatures(2) << "~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
-					 << chaineDeTablatures(1) << "version 2.0 Alpha " 
-					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+					 << chaineDeTablatures(1) << "version 2.0 Alpha "
+					 << chaineDeTablatures(4) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
 				Sleep(760);
-				NettoyerConsole(1);
 			}
 
 			if (i == 2) {
@@ -134,9 +132,8 @@ void afficherIntroduction() {
 					 << chaineDeTablatures(4) << " ~ }|)))))))))))))))>"	<< endl
 					 << chaineDeTablatures(4) << "~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
 					 << chaineDeTablatures(1) << "version 2.0 Alpha "
-					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+					 << chaineDeTablatures(4) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
 				Sleep(400);
-				NettoyerConsole(1);
 			}
 
 			if (i == 3) {
@@ -144,9 +141,8 @@ void afficherIntroduction() {
 					 << chaineDeTablatures(5) << " ~ }|)))))))))))))))>"	<< endl
 					 << chaineDeTablatures(5) << "~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
 					 << chaineDeTablatures(1) << "version 2.0 Alpha "
-					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+					 << chaineDeTablatures(4) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
 				Sleep(440);;
-				NettoyerConsole(1);
 			}
 
 			if (i == 4) {
@@ -154,9 +150,8 @@ void afficherIntroduction() {
 					 << chaineDeTablatures(7) << "   ~ }|)))))))))))))))>"	<< endl
 					 << chaineDeTablatures(7) << "  ~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
 					 << chaineDeTablatures(1) << "version 2.0 Alpha "
-					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
-				Sleep(320);
-				NettoyerConsole(1);
+					 << chaineDeTablatures(4) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+				Sleep(300);
 			}
 			
 
@@ -165,19 +160,20 @@ void afficherIntroduction() {
 					 << chaineDeTablatures(10) << " ~ }|)))))))))))))))>"	<< endl
 					 << chaineDeTablatures(10) << "~ ]|/       [/ "			<< endl << endl << endl << endl << endl << endl
 					 << chaineDeTablatures(1) << "version 2.0 Alpha "
-					 << chaineDeTablatures(3) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
+					 << chaineDeTablatures(4) << " Developpe par Antoine Gaulin | Team Skywatchers | 2017" << endl;
 				Sleep(1300);
-				NettoyerConsole(1);
 			}
 
 			if (i == 6) {
-				cout << endl
-					<< chaineDeTablatures(6) <<"Decollage reussi!" << endl
-					<< endl;
+				cout	<< endl
+						<< chaineDeTablatures(6) <<"Decollage reussi!" << endl
+						<< endl;
 			}
+
+			NettoyerConsole(true);
 		}
 		Sleep(4000);
-		NettoyerConsole(1);
+		NettoyerConsole(false);
 	}
 
 #pragma endregion fonctions
@@ -190,7 +186,7 @@ int main() {
 	MoveWindow(GetConsoleWindow(), 50, 50, 850, 460, TRUE);
 	Sleep(500);
 
-	NettoyerConsole(1);
+	NettoyerConsole(false);
 	PlaySound(TEXT("./Soundtrack/Intro.wav"), NULL, SND_FILENAME | SND_ASYNC);
 	afficherIntroduction();
 	NettoyerConsole(0);

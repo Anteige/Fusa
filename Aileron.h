@@ -2,7 +2,7 @@
 /// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.h
-/// \date			02/02/2017 - MAJ 03/02/2017
+/// \date			02/02/2017 - MAJ 06/02/2017
 /// \description	Definition de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -13,6 +13,8 @@
 #include "Donnee.h"
 
 using namespace std;
+
+const int AXE_X = 1, AXE_Y = 1, AXE_Z = 1;
 
 class Aileron
 {
@@ -39,6 +41,7 @@ private:
 	Donnee	resistance_;
 	Donnee	aire_;
 	string	forme_;
+	double	CentreDeMasse_[AXE_X][AXE_Y][AXE_Z];
 };
 
 #endif // _AILERON_H_
