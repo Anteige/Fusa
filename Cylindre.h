@@ -9,11 +9,12 @@
 #ifndef _CYLINDRE_H_
 #define _CYLINDRE_H_
 
+#include "ObjetPhysique.h"
 #include "Donnee.h"
 
 using namespace std;
 
-class Cylindre 
+class Cylindre : ObjetPhysique
 {
 public:
 	// Constructeur par defaut.
@@ -22,18 +23,15 @@ public:
 	// Methodes d'acces.
 	Donnee	obtenirVolume()				const;
 	Donnee	obtenirPressionMaximale()	const;
-	Donnee	obtenirMasse()				const;
 
 	// Methodes de modifications.
 	void	mettreVolume(Donnee volume);
 	void	mettrePressionMaximale(Donnee pressionMaximale);
-	void	mettreMasse(Donnee masse);
 
 private:
 	// Attributs
 	Donnee	volume_;
 	Donnee	pressionMaximale_;
-	Donnee	masse_;
 };
 
 #endif // _Cylindre_H_

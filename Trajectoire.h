@@ -20,20 +20,20 @@ public:
 	Trajectoire();
 
 	// Methodes d'acces.
+	Donnee	obtenirAltitudeMax()	const;
 	Donnee	obtenirDistance()		const;
 	Donnee	obtenirTemps()			const;
-	Donnee	obtenirAltitudeMax()	const;
 
 	// Methodes de modifications.
+	void	mettreAltitudeMax(Donnee altitudeMax);
 	void	mettreDistance(Donnee distance);
 	void	mettreTemps(Donnee temps);
-	void	mettreAltitudeMax(Donnee altitudeMax);
 
 private:
 	// Attributs
+	Donnee	altitudeMax_;
 	Donnee	distance_;
 	Donnee	temps_;
-	Donnee	altitudeMax_;
 };
 
 #endif // _TRAJECTOIRE_H_

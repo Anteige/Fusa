@@ -10,28 +10,26 @@
 #define _CARBURANT_H_
 
 #include "Donnee.h"
+#include "ObjetPhysique.h"
 
 using namespace std;
 
-class Carburant
+class Carburant : ObjetPhysique
 {
 public:
 	// Constructeurs.
 	Carburant();
 
 	// Methodes d'acces.
-	Donnee	obtenirMasse()		const;
 	Donnee	obtenirPression()	const;
 	Donnee	obtenirPoussee()	const;
 
 	// Methodes de modifications.
-	void	mettreMasse(Donnee masse);
 	void	mettrePression(Donnee pression);
 	void	mettrePoussee(Donnee poussee);
 
 private:
 	// Attributs
-	Donnee	masse_;
 	Donnee	pression_;
 	Donnee	poussee_;
 };

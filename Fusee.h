@@ -18,27 +18,36 @@
 
 using namespace std;
 
-class Fusee
+class Fusee : ObjetPhysique
 {
 public:
 	// Constructeur par defaut.
 	Fusee();
 
-	// Destructeur.
-	~Fusee();
+	// Methodes d'acces.
+	Aileron		obtenirAileron()		const;
+	Carburant	obtenirCarburant()		const;
+	ConePointe	obtenirConePointe()		const;
+	Cylindre	obtenirCylindre()		const;
+	Moteur		obtenirMoteur()			const;
+	ConePointe	obtenirTrajectoire()	const;
 
-	// Constructeur par parametres.
-	Fusee(Donnee volume, Donnee pressionMaximale, Donnee masse);
+	// Methodes de modifications.
+	void	mettreAileron(Aileron aileron);
+	void	mettreCarburant(Carburant carburant);
+	void	mettreCylindre(Cylindre cylindre);
+	void	mettreConePointe(ConePointe conePointe);
+	void	mettreMoteur(Moteur moteur);
+	void	mettreTrajectoire(Trajectoire trajectoire);
 
 private:
 	// Attributs
-	Aileron*		ailerons_;
-	Carburant*		carburant_;
-	ConePointe*		conePointe_;
-	Moteur*			moteur_;
-	Trajectoire*	trajectoire_;
-	Donnee			masse_;
-	Donnee			centreDeMasse_[N_AXES];
+	Aileron			aileron_;
+	Carburant		carburant_;
+	Cylindre		cylindre_;
+	ConePointe		conePointe_;
+	Moteur			moteur_;
+	Trajectoire		trajectoire_;
 };
 
 #endif // _FUSEE_H_

@@ -1,2 +1,15 @@
-﻿  Fusa.vcxproj -> C:\Users\antoi_000.PC-VOYAGE\Documents\GitHub\Fusa\Debug\Fusa.exe
-  Fusa.vcxproj -> C:\Users\antoi_000.PC-VOYAGE\Documents\GitHub\Fusa\Debug\Fusa.pdb (Partial PDB)
+﻿  Moteur.cpp
+  main.cpp
+  Fusee.cpp
+c:\users\antoi_000.pc-voyage\documents\github\fusa\fusee.cpp(34): error C2440: 'return' : impossible de convertir de 'const Trajectoire' en 'ConePointe'
+  c:\users\antoi_000.pc-voyage\documents\github\fusa\fusee.cpp(34): note: Aucun constructeur n'a pu prendre le type de source, ou la résolution de la surcharge du constructeur était ambiguë
+  Donnee.cpp
+  Cylindre.cpp
+c:\users\antoi_000.pc-voyage\documents\github\fusa\cylindre.cpp(30): error C2511: 'Cylindre::Cylindre(Donnee,Donnee,Donnee)' : impossible de trouver la fonction membre surchargée dans 'Cylindre'
+  c:\users\antoi_000.pc-voyage\documents\github\fusa\cylindre.h(17): note: voir la déclaration de 'Cylindre'
+c:\users\antoi_000.pc-voyage\documents\github\fusa\cylindre.cpp(31): error C2597: référence non conforme à un membre non static 'Cylindre::volume_'
+c:\users\antoi_000.pc-voyage\documents\github\fusa\cylindre.cpp(32): error C2597: référence non conforme à un membre non static 'Cylindre::pressionMaximale_'
+c:\users\antoi_000.pc-voyage\documents\github\fusa\cylindre.cpp(33): error C2597: référence non conforme à un membre non static 'Cylindre::masse_'
+  Carburant.cpp
+  Aileron.cpp
+  Génération de code en cours...

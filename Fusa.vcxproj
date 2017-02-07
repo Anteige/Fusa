@@ -151,6 +151,7 @@
     <ClInclude Include="Donnee.h" />
     <ClInclude Include="Fusee.h" />
     <ClInclude Include="Moteur.h" />
+    <ClInclude Include="ObjetPhysique.h" />
     <ClInclude Include="Trajectoire.h" />
   </ItemGroup>
   <ItemGroup>
@@ -158,8 +159,11 @@
     <ClCompile Include="Carburant.cpp" />
     <ClCompile Include="Cylindre.cpp" />
     <ClCompile Include="Donnee.cpp" />
+    <ClCompile Include="Fusee.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Moteur.cpp" />
+    <ClCompile Include="ObjetPhysique.cpp" />
+    <ClCompile Include="Trajectoire.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

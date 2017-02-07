@@ -2,7 +2,7 @@
 /// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.h
-/// \date			02/02/2017 - MAJ 06/02/2017
+/// \date			02/02/2017 - MAJ 07/02/2017
 /// \description	Definition de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -10,10 +10,11 @@
 #define _AILERON_H_
 
 #include "Donnee.h"
+#include "ObjetPhysique.h"
 
 using namespace std;
 
-class Aileron
+class Aileron : ObjetPhysique
 {
 public:
 	// Constructeurs.
@@ -38,7 +39,6 @@ private:
 	Donnee	resistance_;
 	Donnee	aire_;
 	string	forme_;
-	Donnee	centreDeMasse_[N_AXES];
 };
 
 #endif // _AILERON_H_
