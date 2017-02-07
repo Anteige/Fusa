@@ -19,15 +19,16 @@ Carburant::Carburant()
 }
 
 /*******************************************************************************
-* Fonction:		Aileron::obtenirMasse
-* Description:	accessor de masse_
+* Fonction:		Aileron::obtenirPoussee
+* Description:	accessor de poussee_
 * Paramètres:	aucun
-* Retour:		(Donnee) la masse du carburant
+* Retour:		(Donnee) la poussee du carburant
 ********************************************************************************/
-Donnee Carburant::obtenirMasse() const
+Donnee Carburant::obtenirPoussee() const
 {
-	return masse_;
+	return poussee_;
 }
+
 
 /*******************************************************************************
 * Fonction:		Aileron::obtenirPression
@@ -41,25 +42,14 @@ Donnee Carburant::obtenirPression() const
 }
 
 /*******************************************************************************
-* Fonction:		Aileron::obtenirPoussee
-* Description:	accessor de poussee_
-* Paramètres:	aucun
-* Retour:		(Donnee) la poussee du carburant
-********************************************************************************/
-Donnee Carburant::obtenirPoussee() const
-{
-	return poussee_;
-}
-
-/*******************************************************************************
-* Fonction:		Carburant::mettreMasse
-* Description:	mutator de masse_
-* Paramètres:	- (Donnee) masse :			a modifier (IN)
+* Fonction:		Carburant::mettrePoussee
+* Description:	mutator de poussee_
+* Paramètres:	- (Donnee) poussee :		a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void Carburant::mettreMasse(Donnee masse)
+void Carburant::mettrePoussee(Donnee poussee)
 {
-	masse_ = masse;
+	poussee_ = poussee;
 }
 
 /*******************************************************************************
@@ -71,15 +61,4 @@ void Carburant::mettreMasse(Donnee masse)
 void Carburant::mettrePression(Donnee pression)
 {
 	pression_ = pression;
-}
-
-/*******************************************************************************
-* Fonction:		Carburant::mettrePoussee
-* Description:	mutator de poussee_
-* Paramètres:	- (Donnee) poussee :		a modifier (IN)
-* Retour:		aucun
-********************************************************************************/
-void Carburant::mettrePoussee(Donnee poussee)
-{
-	poussee_ = poussee;
 }

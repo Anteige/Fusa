@@ -2,7 +2,7 @@
 /// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Carburant.h
-/// \date			02/02/2017 - MAJ 03/02/17
+/// \date			02/02/2017 - MAJ 07/02/17
 /// \description	Definition de la classe Carburant
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -21,17 +21,17 @@ public:
 	Carburant();
 
 	// Methodes d'acces.
-	Donnee	obtenirPression()	const;
 	Donnee	obtenirPoussee()	const;
+	Donnee	obtenirPression()	const;
 
 	// Methodes de modifications.
-	void	mettrePression(Donnee pression);
 	void	mettrePoussee(Donnee poussee);
+	void	mettrePression(Donnee pression);
 
 private:
 	// Attributs
-	Donnee	pression_;
 	Donnee	poussee_;
+	Donnee	pression_;
 };
 
 #endif // _CARBURANT_H_

@@ -55,7 +55,7 @@ Donnee Trajectoire::obtenirTemps() const
 /*******************************************************************************
 * Fonction:		Trajectoire::mettreAltitudeMax
 * Description:	mutator de altitudeMax_
-* Paramètres:	- (Donnee) altitudeMax :			a initialiser (IN)
+* Paramètres:	- (Donnee) altitudeMax :			a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Trajectoire::mettreAltitudeMax(Donnee altitudeMax)
@@ -66,7 +66,7 @@ void Trajectoire::mettreAltitudeMax(Donnee altitudeMax)
 /*******************************************************************************
 * Fonction:		Trajectoire::mettreDistance
 * Description:	mutator de distance_
-* Paramètres:	- (Donnee) distance :				a initialiser (IN)
+* Paramètres:	- (Donnee) distance :				a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Trajectoire::mettreDistance(Donnee distance)
@@ -77,7 +77,7 @@ void Trajectoire::mettreDistance(Donnee distance)
 /*******************************************************************************
 * Fonction:		Trajectoire::mettreDistance
 * Description:	mutator de temps_
-* Paramètres:	- (Donnee) temps :					a initialiser (IN)
+* Paramètres:	- (Donnee) temps :					a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Trajectoire::mettreTemps(Donnee temps)
