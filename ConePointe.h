@@ -34,7 +34,6 @@ private:
 	Donnee	resistance_;
 	Donnee	masse_;
 	string	forme_;
-	Donnee	centreDeMasse_[N_AXES];
 };
 
 #endif // _CONEPOINTE_H_
