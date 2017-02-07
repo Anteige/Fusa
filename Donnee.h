@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa			Version 1
+/// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Donnee.h
 /// \date			31/01/2017 - MAJ 07/02/2017
