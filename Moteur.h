@@ -1,16 +1,16 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa v.1 alpha
+/// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Moteur.h
-/// \date			02/02/2017
+/// \date			02/02/2017 - MAJ 07/02/2017
 /// \description	Definition de la classe Moteur
 ////////////////////////////////////////////////////////////////////////////////
 
 #ifndef _MOTEUR_H_
 #define _MOTEUR_H_
 
-#include "Donnee.h"
 #include "ObjetPhysique.h"
+#include "Donnee.h"
 
 using namespace std;
 
@@ -21,20 +21,20 @@ public:
 	Moteur();
 
 	// Methodes d'acces.
+	string	obtenirForme()			const;
 	Donnee	obtenirPoussee()		const;
 	Donnee	obtenirTemperature()	const;
-	string	obtenirForme()			const;
 
 	// Methodes de modifications.
+	void	mettreForme(string forme);
 	void	mettrePoussee(Donnee poussee);
 	void	mettreTemperature(Donnee temperature);
-	void	mettreForme(string forme);
 
 private:
 	// Attributs
+	string	forme_;
 	Donnee	poussee_;
 	Donnee	temperature_;
-	string	forme_;
 };
 
 #endif // _MOTEUR_H_
