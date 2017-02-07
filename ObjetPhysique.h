@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa
+/// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		ObjetPhysique.h
 /// \date			07/02/2017
@@ -9,11 +9,12 @@
 #ifndef _OBJETPHYSIQUE_H_
 #define _OBJETPHYSIQUE_H_
 
+#include <vector>
 #include "Donnee.h"
 
 using namespace std;
 
-enum Axes { AXE_X, AXE_Y, AXE_Z, N_AXES };
+enum Axes { X, Y, Z, N_AXES };
 
 class ObjetPhysique
 {
@@ -22,17 +23,19 @@ public:
 	ObjetPhysique();
 
 	// Methodes d'acces.
+	Donnee	obtenirCentreDeMasseEnX()	const;
+	Donnee	obtenirCentreDeMasseEnY()	const;
+	Donnee	obtenirCentreDeMasseEnZ()	const;
 	Donnee	obtenirMasse()				const;
-	Donnee*	obtenirCentreDeMasseEnX()	const;
 
 	// Methodes de modifications.
-	void	mettreMasse(Donnee masse);
 	void	mettreCentreDeMasse(Donnee pointX, Donnee pointY, Donnee pointZ);
+	void	mettreMasse(Donnee masse);
 
 private:
 	// Attributs
+	vector<Donnee> centreDeMasse_;
 	Donnee	masse_;
-	Donnee	centreDeMasse_[N_AXES];
 };
 
 #endif // _OBJETPHYSIQUE_H_
