@@ -2,8 +2,8 @@
 /// Fusa
 /// \auteur			Antoine Gaulin
 /// \fichier		Carburant.cpp
-/// \date			02/02/2017 - MAJ 06/02/2017
-/// \description	Implementation de la classe Carburant
+/// \date			02/02/2017 - MAJ 03/02/2017
+/// \description	Implementation de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "Carburant.h"

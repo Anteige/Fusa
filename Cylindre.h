@@ -19,6 +19,9 @@ public:
 	// Constructeur par defaut.
 	Cylindre();
 
+	// Constructeur par parametres.
+	Cylindre(Donnee volume, Donnee pressionMaximale, Donnee masse);
+
 	// Methodes d'acces.
 	Donnee	obtenirVolume()				const;
 	Donnee	obtenirPressionMaximale()	const;

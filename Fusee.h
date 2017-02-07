@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa
+/// Fusa v.1 alpha
 /// \auteur			Antoine Gaulin
 /// \fichier		Fusee.h
-/// \date			02/02/2017 - MAJ 07/02/2017
+/// \date			02/02/2017
 /// \description	Definition de la classe Fusee
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -11,10 +11,7 @@
 
 #include "Aileron.h"
 #include "Carburant.h"
-#include "Cylindre.h"
-#include "ConePointe.h"
-#include "Moteur.h"
-#include "Trajectoire.h"
+#include "Donnee.h"
 
 using namespace std;
 
@@ -32,13 +29,8 @@ public:
 
 private:
 	// Attributs
-	Aileron*		ailerons_;
-	Carburant*		carburant_;
-	ConePointe*		conePointe_;
-	Moteur*			moteur_;
-	Trajectoire*	trajectoire_;
-	Donnee			masse_;
-	Donnee			centreDeMasse_[N_AXES];
+	Aileron*	ailerons_;
+	Donnee		masse_;
 };
 
 #endif // _FUSEE_H_
