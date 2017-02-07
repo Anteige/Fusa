@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa			Version 1
+/// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Moteur.h
 /// \date			02/02/2017 - MAJ 07/02/2017
