@@ -1,65 +1,151 @@
+////////////////////////////////////////////////////////////////////////////////
+/// Fusa			version 1
+/// \auteur			Antoine Gaulin
+/// \fichier		Fusee.cpp
+/// \date			07/02/2017
+/// \description	Definition de la classe Fusee
+////////////////////////////////////////////////////////////////////////////////
+
 #include "Fusee.h"
 
+/*******************************************************************************
+* Fonction:		Fusee::Fusee
+* Description:	Constructeur par defaut
+* Paramètres:	aucun
+* Retour:		aucun
+********************************************************************************/
 Fusee::Fusee()
 {
 }
 
+/*******************************************************************************
+* Fonction:		Fusee::obtenirAileron
+* Description:	accessor de aileron_
+* Paramètres:	aucun
+* Retour:		(Aileron) un aileron de la fusee
+********************************************************************************/
 Aileron Fusee::obtenirAileron() const
 {
 	return aileron_;
 }
 
+/*******************************************************************************
+* Fonction:		Fusee::obtenirCarburant
+* Description:	accessor de carburant_
+* Paramètres:	aucun
+* Retour:		(Carburant) le carburant de la fusee
+********************************************************************************/
 Carburant Fusee::obtenirCarburant() const
 {
 	return carburant_;
 }
 
+/*******************************************************************************
+* Fonction:		Fusee::obtenirConePointe
+* Description:	accessor de conePointe_
+* Paramètres:	aucun
+* Retour:		(ConePointe) le cone a la pointe de la fusee
+********************************************************************************/
 ConePointe Fusee::obtenirConePointe() const
 {
 	return conePointe_;
 }
 
+/*******************************************************************************
+* Fonction:		Fusee::obtenirCylindre
+* Description:	accessor de cylindre_
+* Paramètres:	aucun
+* Retour:		(Cylindre) le cylindre de la fusee
+********************************************************************************/
 Cylindre Fusee::obtenirCylindre() const
 {
 	return cylindre_;
 }
 
+/*******************************************************************************
+* Fonction:		Fusee::obtenirMoteur
+* Description:	accessor de moteur_
+* Paramètres:	aucun
+* Retour:		(Moteur) le moteur de la fusee
+********************************************************************************/
 Moteur Fusee::obtenirMoteur() const
 {
 	return moteur_;
 }
 
-ConePointe Fusee::obtenirTrajectoire() const
+/*******************************************************************************
+* Fonction:		Fusee::obtenirTrajectoire
+* Description:	accessor de trajectoire_
+* Paramètres:	aucun
+* Retour:		(Trajectoire) la trajectoire de la fusee
+********************************************************************************/
+Trajectoire Fusee::obtenirTrajectoire() const
 {
 	return trajectoire_;
 }
 
-void Fusee::mettreAileron(Aileron aileron)
+/*******************************************************************************
+* Fonction:		Trajectoire::mettreAileron
+* Description:	mutator de aileron_
+* Paramètres:	- (Aileron) aileron :			a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void Fusee::mettreAileron(const Aileron& aileron)
 {
 	aileron_ = aileron;
 }
 
-void Fusee::mettreCarburant(Carburant carburant)
+/*******************************************************************************
+* Fonction:		Trajectoire::mettreCarburant
+* Description:	mutator de carburant_
+* Paramètres:	- (Carburant) carburant :		a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void Fusee::mettreCarburant(const Carburant& carburant)
 {
 	carburant_ = carburant;
 }
 
-void Fusee::mettreCylindre(Cylindre cylindre)
-{
-	cylindre_ = cylindre;
-}
-
-void Fusee::mettreConePointe(ConePointe conePointe)
+/*******************************************************************************
+* Fonction:		Trajectoire::mettreConePointe
+* Description:	mutator de conePointe_
+* Paramètres:	- (ConePointe) ConePointe :		a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void Fusee::mettreConePointe(const ConePointe& conePointe)
 {
 	conePointe_ = conePointe;
 }
 
-void Fusee::mettreMoteur(Moteur moteur)
+/*******************************************************************************
+* Fonction:		Trajectoire::mettreCylindre
+* Description:	mutator de cylindre_
+* Paramètres:	- (Cylindre) cylindre :			a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void Fusee::mettreCylindre(const Cylindre& cylindre)
+{
+	cylindre_ = cylindre;
+}
+
+/*******************************************************************************
+* Fonction:		Trajectoire:::mettreMoteur
+* Description:	mutator de moteur_
+* Paramètres:	- (Moteur) moteur :				a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void Fusee::mettreMoteur(const Moteur& moteur)
 {
 	moteur_ = moteur;
 }
 
-void Fusee::mettreTrajectoire(Trajectoire trajectoire)
+/*******************************************************************************
+* Fonction:		Trajectoire:::mettreTrajectoire
+* Description:	mutator de trajectoire_
+* Paramètres:	- (Trajectoire) trajectoire :	a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void Fusee::mettreTrajectoire(const Trajectoire& trajectoire)
 {
 	trajectoire_ = trajectoire;
 }

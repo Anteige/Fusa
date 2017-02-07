@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa
+/// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Fusee.h
 /// \date			02/02/2017 - MAJ 07/02/2017
@@ -11,8 +11,8 @@
 
 #include "Aileron.h"
 #include "Carburant.h"
-#include "Cylindre.h"
 #include "ConePointe.h"
+#include "Cylindre.h"
 #include "Moteur.h"
 #include "Trajectoire.h"
 
@@ -30,22 +30,22 @@ public:
 	ConePointe	obtenirConePointe()		const;
 	Cylindre	obtenirCylindre()		const;
 	Moteur		obtenirMoteur()			const;
-	ConePointe	obtenirTrajectoire()	const;
+	Trajectoire	obtenirTrajectoire()	const;
 
 	// Methodes de modifications.
-	void	mettreAileron(Aileron aileron);
-	void	mettreCarburant(Carburant carburant);
-	void	mettreCylindre(Cylindre cylindre);
-	void	mettreConePointe(ConePointe conePointe);
-	void	mettreMoteur(Moteur moteur);
-	void	mettreTrajectoire(Trajectoire trajectoire);
+	void	mettreAileron(const Aileron& aileron);
+	void	mettreCarburant(const Carburant& carburant);
+	void	mettreConePointe(const ConePointe& conePointe);
+	void	mettreCylindre(const Cylindre& cylindre);
+	void	mettreMoteur(const Moteur& moteur);
+	void	mettreTrajectoire(const Trajectoire& trajectoire);
 
 private:
 	// Attributs
 	Aileron			aileron_;
 	Carburant		carburant_;
-	Cylindre		cylindre_;
 	ConePointe		conePointe_;
+	Cylindre		cylindre_;
 	Moteur			moteur_;
 	Trajectoire		trajectoire_;
 };
