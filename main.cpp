@@ -178,11 +178,38 @@ void afficherIntroduction() {
 
 #pragma endregion fonctions
 
+#pragma region Memoire
+
+void Sauvegarde(const Fusee& fusee) 
+{
+	ofstream fichier("Sauvegarde.bin", ios::binary);
+
+	fichier.seekp(0, ios::beg);
+
+	fichier.write((char*)&fusee, sizeof(Fusee));
+
+}
+
+void Chargement(const Fusee& fusee)
+{
+	ifstream fichier("Sauvegarde.bin", ios::binary);
+
+	fichier.seekg(0, ios::beg);
+
+	fichier.read((char*)&fusee, sizeof(Fusee));
+
+}
+
+#pragma endregion fonctions
+
 int main() {
+
+	Fusee fusee;
+
 	DefinirLaPolice();
+	Chargement(fusee);
 	cout << "Initialisation..." << endl;
 	Sleep(300);
-
 	MoveWindow(GetConsoleWindow(), 50, 50, 850, 460, TRUE);
 	Sleep(500);
 
@@ -190,7 +217,8 @@ int main() {
 	PlaySound(TEXT("./Soundtrack/Intro.wav"), NULL, SND_FILENAME | SND_ASYNC);
 	afficherIntroduction();
 	NettoyerConsole(0);
-	cout << "Voici la musique qui jouera en boucle dans les menus...";
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	Sauvegarde(fusee);
+	cout << fusee.obtenirMasse();
 	Sleep(50000000);
 } 
