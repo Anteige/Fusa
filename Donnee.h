@@ -32,8 +32,8 @@ public:
 	void	mettreValeur(double nom);
 	void	mettreUnite(string unite);
 
-	// Surchages d'operateur.
-	friend ostream& operator<<(ostream& o, const Donnee& donnee);
+	// Affichage
+	friend ostream& operator<<(ostream& out, const Donnee& donnee);
 
 private:
 	// Attributs

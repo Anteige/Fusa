@@ -112,4 +112,5 @@ void Donnee::mettreUnite(string unite)
 ostream& operator<<(ostream& out, const Donnee& donnee)
 {
 	out << donnee.obtenirNom() << ' ' << donnee.obtenirValeur() << ' ' << donnee.obtenirUnite();
+	return out;
 }
