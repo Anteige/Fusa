@@ -24,9 +24,9 @@ Donnee::Donnee()
 /*******************************************************************************
 * Fonction:		Donnee::Donnee
 * Description:	Constructeur par parametres
-* Paramètres:	- (string) nom :				a initialiser (IN)
-				- (double) valeur :				a initialiser (IN)
-				- (string) unite :				a initialiser (IN)
+* Paramètres:	- (string) nom :		a initialiser (IN)
+				- (double) valeur :		a initialiser (IN)
+				- (string) unite :		a initialiser (IN)
 * Retour:		aucun
 ********************************************************************************/
 Donnee::Donnee(string nom, double valeur, string unite)
@@ -72,7 +72,7 @@ string Donnee::obtenirUnite() const
 /*******************************************************************************
 * Fonction:		Donnee::mettreNom
 * Description:	mutator de nom_
-* Paramètres:	- (string) nom :		a initialiser (IN)
+* Paramètres:	- (string) nom :		a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Donnee::mettreNom(string nom)
@@ -83,7 +83,7 @@ void Donnee::mettreNom(string nom)
 /*******************************************************************************
 * Fonction:		Donnee::mettreValeur
 * Description:	mutator de valeur_
-* Paramètres:	- (double) valeur :		a initialiser (IN)
+* Paramètres:	- (double) valeur :		a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Donnee::mettreValeur(double valeur)
@@ -94,10 +94,22 @@ void Donnee::mettreValeur(double valeur)
 /*******************************************************************************
 * Fonction:		Donnee::mettreUnite
 * Description:	mutator de unite_
-* Paramètres:	- (string) unite :		a initialiser (IN)
+* Paramètres:	- (string) unite :		a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Donnee::mettreUnite(string unite)
 {
 	unite_ = unite;
+}
+
+/****************************************************************************
+* Fonction:		Donnee::operator<<
+* Description:	permet l'affichage d'une donnee
+* Paramètres:	- (ostream) out : le flux de sortie
+				- (donnee)	donnee : la donnee a afficher
+* Retour:		(ostream) pour l'appel en cascade
+****************************************************************************/
+ostream& operator<<(ostream& out, const Donnee& donnee)
+{
+	out << donnee.obtenirNom() << ' ' << donnee.obtenirValeur() << ' ' << donnee.obtenirUnite();
 }
