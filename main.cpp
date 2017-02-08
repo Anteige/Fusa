@@ -193,5 +193,4 @@ int main() {
 	cout << "Voici la musique qui jouera en boucle dans les menus...";
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 	Sleep(50000000);
-
 } 
