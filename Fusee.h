@@ -18,7 +18,7 @@
 
 using namespace std;
 
-class Fusee : ObjetPhysique
+class Fusee : public ObjetPhysique
 {
 public:
 	// Constructeur par defaut.

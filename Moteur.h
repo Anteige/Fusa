@@ -14,7 +14,7 @@
 
 using namespace std;
 
-class Moteur : ObjetPhysique
+class Moteur : public ObjetPhysique
 {
 public:
 	// Constructeurs.

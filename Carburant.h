@@ -14,7 +14,7 @@
 
 using namespace std;
 
-class Carburant : ObjetPhysique
+class Carburant : public ObjetPhysique
 {
 public:
 	// Constructeurs.

@@ -14,7 +14,7 @@
 
 using namespace std;
 
-class Cylindre : ObjetPhysique
+class Cylindre : public ObjetPhysique
 {
 public:
 	// Constructeur par defaut.

@@ -14,7 +14,7 @@
 
 using namespace std;
 
-class Aileron : ObjetPhysique
+class Aileron : public ObjetPhysique
 {
 public:
 	// Constructeurs.

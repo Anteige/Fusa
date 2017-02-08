@@ -14,7 +14,7 @@
 
 using namespace std;
 
-class ConePointe : ObjetPhysique
+class ConePointe : public ObjetPhysique
 {
 public:
 	// Constructeurs.
