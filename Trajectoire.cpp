@@ -85,13 +85,13 @@ void Trajectoire::mettreTemps(Donnee temps)
 	temps_ = temps;
 }
 
-/****************************************************************************
+/*******************************************************************************
 * Fonction:		Trajectoire::operator<<
 * Description:	permet l'affichage des parametres de la trajectoire
 * Paramètres:	- (ostream) out : le flux de sortie
 				- (Trajectoire)	trajectoire : la trajectoire a afficher
 * Retour:		(ostream) pour l'appel en cascade
-****************************************************************************/
+********************************************************************************/
 ostream & operator<<(ostream & out, const Trajectoire& trajectoire)
 {
 	out << "Voici les parametres de la trajectoire /" << endl << endl

@@ -32,7 +32,7 @@ public:
 
 private:
 	// Attributs
-	string	forme_;
+	char	forme_[LONGUEUR_MOT_MAX];
 	Donnee	poussee_;
 	Donnee	temperature_;
 };

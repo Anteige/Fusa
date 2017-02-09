@@ -12,7 +12,6 @@
 #include <windows.h>
 
 #include "Fusee.h"
-#include "Cercle.h"
 
 #pragma comment(lib, "winmm.lib")
 
@@ -180,7 +179,7 @@ void afficherIntroduction() {
 
 #pragma region Memoire
 
-void Sauvegarde(const Fusee& fusee) 
+void Sauvegarder(const Fusee& fusee) 
 {
 	ofstream fichier("Sauvegarde.bin", ios::binary);
 
@@ -207,22 +206,27 @@ int main() {
 	Fusee fusee;
 
 	DefinirLaPolice();
-	Chargement(fusee);
 	cout << "Initialisation..." << endl;
 	Sleep(300);
 	MoveWindow(GetConsoleWindow(), 50, 50, 850, 460, TRUE);
 	Sleep(500);
 
-	NettoyerConsole(false);
+	NettoyerConsole(FALSE);
 	PlaySound(TEXT("./Soundtrack/Intro.wav"), NULL, SND_FILENAME | SND_ASYNC);
 	afficherIntroduction();
-	NettoyerConsole(0);
+
+	Chargement(fusee);
+
+	NettoyerConsole(FALSE);
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 
-	Trajectoire test;
-	test.mettreAltitudeMax(Donnee("Altitude maximale", 5.0, "metres"));
-	test.mettreDistance(Donnee("Distance", 7.0, "metres"));
-	test.mettreTemps(Donnee("Temps", 5.0, "secondes"));
-	cout << test;
+	Carburant test;
+	test.mettrePression(Donnee("Pression", 1 , "Atmosphere"));
+	test.mettreMasse(Donnee("Masse", 8.43, "Kilogrammes"));
+	test.mettrePoussee(Donnee("Poussee", 1, "Newtons"));
+	fusee.mettreCarburant(test);
+	cout << fusee.obtenirCarburant();
+	cout << fusee.obtenirTrajectoire();
+	Sauvegarder(fusee);
 	Sleep(50000000);
 } 

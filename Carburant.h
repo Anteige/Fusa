@@ -25,8 +25,11 @@ public:
 	Donnee	obtenirPression()	const;
 
 	// Methodes de modifications.
-	void	mettrePoussee(Donnee poussee);
-	void	mettrePression(Donnee pression);
+	void	mettrePoussee(const Donnee& poussee);
+	void	mettrePression(const Donnee& pression);
+
+	// Affichage
+	friend ostream& operator<<(ostream& out, const Carburant& carburant);
 
 private:
 	// Attributs

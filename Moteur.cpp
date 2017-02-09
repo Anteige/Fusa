@@ -59,7 +59,7 @@ Donnee Moteur::obtenirTemperature() const
 ********************************************************************************/
 void Moteur::mettreForme(string forme)
 {
-	forme_ = forme;
+	strcpy_s(forme_, forme.c_str());
 }
 
 /*******************************************************************************

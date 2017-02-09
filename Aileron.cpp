@@ -35,7 +35,7 @@ Donnee Aileron::obtenirForce() const
 * Paramètres:	aucun
 * Retour:		(string) la forme de l'aileron
 ********************************************************************************/
-Forme* Aileron::obtenirForme() const
+ string Aileron::obtenirForme() const
 {
 	return forme_;
 }
@@ -68,9 +68,9 @@ void Aileron::mettreForce(Donnee force)
 * Paramètres:	- (Forme*) ptr de forme :	pointe vers la forme a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void Aileron::mettreForme(Forme* forme)
+void Aileron::mettreForme(string forme)
 {
-	forme_ = forme;
+	strcpy_s(forme_, forme.c_str());
 }
 
 /*******************************************************************************

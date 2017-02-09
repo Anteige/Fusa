@@ -47,7 +47,7 @@ Donnee Carburant::obtenirPression() const
 * Paramètres:	- (Donnee) poussee :		a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void Carburant::mettrePoussee(Donnee poussee)
+void Carburant::mettrePoussee(const Donnee& poussee)
 {
 	poussee_ = poussee;
 }
@@ -58,7 +58,23 @@ void Carburant::mettrePoussee(Donnee poussee)
 * Paramètres:	- (Donnee) pression :		a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void Carburant::mettrePression(Donnee pression)
+void Carburant::mettrePression(const Donnee& pression)
 {
 	pression_ = pression;
+}
+
+/*******************************************************************************
+* Fonction:		Carburant::operator<<
+* Description:	permet l'affichage des parametres du carburant
+* Paramètres:	- (ostream)		out : le flux de sortie
+				- (Carburant)	carburant : le carburant a afficher
+* Retour:		(ostream) pour l'appel en cascade
+********************************************************************************/
+ostream& operator<<(ostream& out, const Carburant& carburant)
+{
+	out << "Voici les parametres du carburant /" << endl << endl
+		<< carburant.obtenirPoussee()	<< endl
+		<< carburant.obtenirPression()	<< endl
+		<< carburant.obtenirMasse()		<< endl;
+	return out;
 }

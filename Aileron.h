@@ -11,7 +11,6 @@
 
 #include "ObjetPhysique.h"
 #include "Donnee.h"
-#include "Forme.h"
 
 using namespace std;
 
@@ -23,19 +22,19 @@ public:
 
 	// Methodes d'acces.
 	Donnee	obtenirForce()		const;
-	Forme*	obtenirForme()		const;
+	string	obtenirForme()		const;
 	Donnee	obtenirResistance()	const;
 
 	// Methodes de modifications.
 	void	mettreForce(Donnee force);
-	void	mettreForme(Forme* forme);
+	void	mettreForme(string forme);
 	void	mettreResistance(Donnee resistance);
 
 private:
 
 	// Attributs
 	Donnee	force_;
-	Forme*	forme_;
+	char	forme_[LONGUEUR_MOT_MAX];
 	Donnee	resistance_;
 };
 

@@ -24,7 +24,7 @@ ConePointe::ConePointe()
 * Paramètres:	aucun
 * Retour:		(Donnee) la forme du Cone a la pointe
 ********************************************************************************/
-Forme* ConePointe::obtenirForme() const
+string ConePointe::obtenirForme() const
 {
 	return forme_;
 }
@@ -43,12 +43,12 @@ Donnee ConePointe::obtenirResistance() const
 /*******************************************************************************
 * Fonction:		Cylindre::mettreForme
 * Description:	mutator de forme_
-* Paramètres:	- (string) forme :					a modifier (IN)
+* Paramètres:	- (string) forme :						a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void ConePointe::mettreForme(Forme* forme)
+void ConePointe::mettreForme(string forme)
 {
-	forme_ = forme;
+	strcpy_s(forme_, forme.c_str());
 }
 
 /*******************************************************************************
