@@ -16,7 +16,7 @@
 ********************************************************************************/
 Donnee::Donnee()
 {
-	strcpy_s(nom_, "Parametre0 //");
+	strcpy_s(nom_, "Parametre0");
 	valeur_ = 0.0;
 	strcpy_s(unite_, "unites");
 }
@@ -111,6 +111,6 @@ void Donnee::mettreUnite(string unite)
 ****************************************************************************/
 ostream& operator<<(ostream& out, const Donnee& donnee)
 {
-	out << donnee.obtenirNom() << ' ' << donnee.obtenirValeur() << ' ' << donnee.obtenirUnite();
+	out << donnee.obtenirNom() << "// " << donnee.obtenirValeur() << ' ' << donnee.obtenirUnite();
 	return out;
 }

@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Donnee.h
-/// \date			31/01/2017 - MAJ 07/02/2017
+/// \date			31/01/2017 - MAJ 09/02/2017
 /// \description	Definition de la classe Donnee
 ////////////////////////////////////////////////////////////////////////////////
 
