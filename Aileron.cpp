@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.cpp
-/// \date			02/02/2017 - MAJ 07/02/2017
+/// \date			02/02/2017 - MAJ 09/02/2017
 /// \description	Implementation de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -16,17 +16,6 @@
 ********************************************************************************/
 Aileron::Aileron()
 {
-}
-
-/*******************************************************************************
-* Fonction:		Aileron::obtenirAire
-* Description:	accessor de aire_
-* Paramètres:	aucun
-* Retour:		(Donnee) l'aire de l'aileron
-********************************************************************************/
-Donnee Aileron::obtenirAire() const
-{
-	return aire_;
 }
 
 /*******************************************************************************
@@ -63,17 +52,6 @@ Donnee Aileron::obtenirResistance() const
 }
 
 /*******************************************************************************
-* Fonction:		Aileron::mettreAire
-* Description:	mutator de aire_
-* Paramètres:	- (Donnee) aire :			a modifier (IN)
-* Retour:		aucun
-********************************************************************************/
-void Aileron::mettreAire(Donnee aire)
-{
-	aire_ = aire;
-}
-
-/*******************************************************************************
 * Fonction:		Aileron::mettreForce
 * Description:	mutator de force_
 * Paramètres:	- (Donnee) force :			a modifier (IN)
@@ -87,7 +65,7 @@ void Aileron::mettreForce(Donnee force)
 /*******************************************************************************
 * Fonction:		Aileron::mettreForme
 * Description:	mutator de forme_
-* Paramètres:	- (string) forme :			a modifier (IN)
+* Paramètres:	- (Forme*) ptr de forme :	pointe vers la forme a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
 void Aileron::mettreForme(Forme* forme)

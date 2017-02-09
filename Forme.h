@@ -20,14 +20,14 @@ public:
 	Forme();
 
 	// Methodes d'acces.
-	Donnee obtenirAire();
-	string	obtenirForme() const;
+	Donnee	obtenirAire();
+	string	obtenirFigure() const;
 
 private:
-	virtual void calculerAire() = 0;
+
 	// Attributs
 	Donnee	aire_;
-	string	forme_;
+	string	figure_;
 };
 
 #endif // _FORME_H_

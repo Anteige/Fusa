@@ -218,10 +218,11 @@ int main() {
 	afficherIntroduction();
 	NettoyerConsole(0);
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
-	Aileron test;
-	Cercle ctest;
-	ctest.mettreRayon(Donnee("Les ", 12, "Doigts de la main"));
-	test.mettreForme(&ctest);
-	cout << test.obtenirForme()->obtenirAire();
+
+	Trajectoire test;
+	test.mettreAltitudeMax(Donnee("Altitude maximale", 5.0, "metres"));
+	test.mettreDistance(Donnee("Distance", 7.0, "metres"));
+	test.mettreTemps(Donnee("Temps", 5.0, "secondes"));
+	cout << test;
 	Sleep(50000000);
 } 

@@ -9,7 +9,7 @@ Donnee Forme::obtenirAire()
 	return aire_;
 }
 
-string Forme::obtenirForme() const
+string Forme::obtenirFigure() const
 {
-	return forme_;
+	return figure_;
 }

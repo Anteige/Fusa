@@ -24,7 +24,7 @@ ConePointe::ConePointe()
 * Paramètres:	aucun
 * Retour:		(Donnee) la forme du Cone a la pointe
 ********************************************************************************/
-string ConePointe::obtenirForme() const
+Forme* ConePointe::obtenirForme() const
 {
 	return forme_;
 }
@@ -46,7 +46,7 @@ Donnee ConePointe::obtenirResistance() const
 * Paramètres:	- (string) forme :					a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void ConePointe::mettreForme(string forme)
+void ConePointe::mettreForme(Forme* forme)
 {
 	forme_ = forme;
 }

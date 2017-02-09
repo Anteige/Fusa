@@ -10,6 +10,7 @@
 #define _CONEPOINTE_H_
 
 #include "ObjetPhysique.h"
+#include "Forme.h"
 #include "Donnee.h"
 
 using namespace std;
@@ -21,17 +22,17 @@ public:
 	ConePointe();
 
 	// Methodes d'acces.
-	string	obtenirForme()		const;
+	Forme*	obtenirForme()		const;
 	Donnee	obtenirResistance()	const;
 
 	// Methodes de modifications.
-	void	mettreForme(string forme);
+	void	mettreForme(Forme* forme);
 	void	mettreResistance(Donnee resistance);
 
 private:
 	// Attributs
 	Donnee	resistance_;
-	string	forme_;
+	Forme*	forme_;
 };
 
 #endif // _CONEPOINTE_H_

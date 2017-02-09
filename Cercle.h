@@ -22,12 +22,12 @@ public:
 	// Constructeurs.
 	Cercle();
 
-	// Methodes d'acces.
-	Donnee obtenirAire();
-
 	void mettreRayon(Donnee rayon);
 
 private:
+	// calcul L'aire de l'objet.
+	void calculerAire();
+
 	// Attributs
 	Donnee rayon_;
 };

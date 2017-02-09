@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Trajectoire.cpp
-/// \date			07/02/2017
+/// \date			07/02/2017 - MAJ 09/02/17
 /// \description	Implémentation de la classe Trajectoire
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -83,4 +83,20 @@ void Trajectoire::mettreDistance(Donnee distance)
 void Trajectoire::mettreTemps(Donnee temps)
 {
 	temps_ = temps;
+}
+
+/****************************************************************************
+* Fonction:		Trajectoire::operator<<
+* Description:	permet l'affichage des parametres de la trajectoire
+* Paramètres:	- (ostream) out : le flux de sortie
+				- (Trajectoire)	trajectoire : la trajectoire a afficher
+* Retour:		(ostream) pour l'appel en cascade
+****************************************************************************/
+ostream & operator<<(ostream & out, const Trajectoire& trajectoire)
+{
+	out << "Voici les parametres de la trajectoire /" << endl << endl
+		<< trajectoire.obtenirAltitudeMax() << endl
+		<< trajectoire.obtenirDistance() << endl
+		<< trajectoire.obtenirTemps() << endl;
+	return out;
 }

@@ -10,6 +10,7 @@
 #define _DONNEE_H_
 
 #include <string>
+#include <iomanip>
 
 using namespace std;
 

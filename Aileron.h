@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.h
-/// \date			02/02/2017 - MAJ 07/02/2017
+/// \date			02/02/2017 - MAJ 09/02/2017
 /// \description	Definition de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -10,8 +10,8 @@
 #define _AILERON_H_
 
 #include "ObjetPhysique.h"
-#include "Forme.h"
 #include "Donnee.h"
+#include "Forme.h"
 
 using namespace std;
 
@@ -22,20 +22,18 @@ public:
 	Aileron();
 
 	// Methodes d'acces.
-	Donnee	obtenirAire()		const;
 	Donnee	obtenirForce()		const;
 	Forme*	obtenirForme()		const;
 	Donnee	obtenirResistance()	const;
 
 	// Methodes de modifications.
-	void	mettreAire(Donnee aire);
 	void	mettreForce(Donnee force);
 	void	mettreForme(Forme* forme);
 	void	mettreResistance(Donnee resistance);
 
 private:
+
 	// Attributs
-	Donnee	aire_;
 	Donnee	force_;
 	Forme*	forme_;
 	Donnee	resistance_;

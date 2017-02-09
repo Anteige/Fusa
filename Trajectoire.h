@@ -29,6 +29,9 @@ public:
 	void	mettreDistance(Donnee distance);
 	void	mettreTemps(Donnee temps);
 
+	// Affichage
+	friend ostream& operator<<(ostream& out, const Trajectoire& trajectoire);
+
 private:
 	// Attributs
 	Donnee	altitudeMax_;

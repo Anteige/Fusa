@@ -102,15 +102,18 @@ void Donnee::mettreUnite(string unite)
 	strcpy_s(unite_, unite.c_str());
 }
 
-/****************************************************************************
+/********************************************************************************
 * Fonction:		Donnee::operator<<
 * Description:	permet l'affichage d'une donnee
 * Paramètres:	- (ostream) out : le flux de sortie
 				- (donnee)	donnee : la donnee a afficher
 * Retour:		(ostream) pour l'appel en cascade
-****************************************************************************/
+********************************************************************************/
 ostream& operator<<(ostream& out, const Donnee& donnee)
 {
-	out << donnee.obtenirNom() << "// " << donnee.obtenirValeur() << ' ' << donnee.obtenirUnite();
+	out << setfill(' ') << setprecision(2)
+		<< setw(20)	<< right << donnee.obtenirNom()		<< "// " 
+		<< setw(20)	<< fixed << donnee.obtenirValeur()	<<  ' '
+		<< setw(20)	<< left	 << donnee.obtenirUnite()	<< endl;
 	return out;
 }
