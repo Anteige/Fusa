@@ -13,6 +13,8 @@
 
 using namespace std;
 
+const unsigned LONGUEUR_MOT_MAX = 20;
+
 class Donnee 
 {
 public:
@@ -37,9 +39,9 @@ public:
 
 private:
 	// Attributs
-	string	nom_;
+	char	nom_[LONGUEUR_MOT_MAX];
 	double	valeur_;
-	string	unite_;
+	char	unite_[LONGUEUR_MOT_MAX];
 };
 
 #endif // _DONNEE_H_
