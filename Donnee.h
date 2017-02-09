@@ -31,7 +31,7 @@ public:
 
 	// Methodes de modifications.
 	void	mettreNom(string nom);
-	void	mettreValeur(double nom);
+	void	mettreValeur(double valeur);
 	void	mettreUnite(string unite);
 
 	// Affichage

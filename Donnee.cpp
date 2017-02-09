@@ -16,9 +16,9 @@
 ********************************************************************************/
 Donnee::Donnee()
 {
-	nom_;
+	strcpy(nom_, "Parametre 0 ////");
 	valeur_ = 0.0;
-	unite_;
+	strcpy(unite_, "unites");
 }
 
 /*******************************************************************************
@@ -31,9 +31,9 @@ Donnee::Donnee()
 ********************************************************************************/
 Donnee::Donnee(string nom, double valeur, string unite)
 {
-	nom_ = nom;
+	strcpy(nom_, nom.c_str());
 	valeur_ = valeur;
-	unite_ = unite;
+	strcpy(unite_, unite.c_str());
 }
 
 /*******************************************************************************
@@ -44,7 +44,7 @@ Donnee::Donnee(string nom, double valeur, string unite)
 ********************************************************************************/
 string Donnee::obtenirNom() const
 {
-	return nom_;
+	return string(nom_);
 }
 
 /*******************************************************************************
@@ -66,7 +66,7 @@ double Donnee::obtenirValeur() const
 ********************************************************************************/
 string Donnee::obtenirUnite() const
 {
-	return unite_;
+	return string(unite_);
 }
 
 /*******************************************************************************
@@ -77,7 +77,7 @@ string Donnee::obtenirUnite() const
 ********************************************************************************/
 void Donnee::mettreNom(string nom)
 {
-	nom_ = nom;
+	strcpy(nom_, nom.c_str());
 }
 
 /*******************************************************************************
@@ -99,7 +99,7 @@ void Donnee::mettreValeur(double valeur)
 ********************************************************************************/
 void Donnee::mettreUnite(string unite)
 {
-	unite_ = unite;
+	strcpy(unite_, unite.c_str());
 }
 
 /****************************************************************************
