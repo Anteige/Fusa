@@ -20,10 +20,11 @@ public:
 	Forme();
 
 	// Methodes d'acces.
-	virtual Donnee obtenirAire() = 0;
+	Donnee obtenirAire();
 	string	obtenirForme() const;
 
 private:
+	virtual void calculerAire() = 0;
 	// Attributs
 	Donnee	aire_;
 	string	forme_;

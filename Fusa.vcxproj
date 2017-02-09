@@ -147,9 +147,11 @@
   <ItemGroup>
     <ClInclude Include="Aileron.h" />
     <ClInclude Include="Carburant.h" />
+    <ClInclude Include="Cercle.h" />
     <ClInclude Include="ConePointe.h" />
     <ClInclude Include="Cylindre.h" />
     <ClInclude Include="Donnee.h" />
+    <ClInclude Include="Forme.h" />
     <ClInclude Include="Fusee.h" />
     <ClInclude Include="Moteur.h" />
     <ClInclude Include="ObjetPhysique.h" />
@@ -158,9 +160,12 @@
   <ItemGroup>
     <ClCompile Include="Aileron.cpp" />
     <ClCompile Include="Carburant.cpp" />
+    <ClCompile Include="Cercle.cpp" />
     <ClCompile Include="ConePointe.cpp" />
     <ClCompile Include="Cylindre.cpp" />
     <ClCompile Include="Donnee.cpp" />
+    <ClCompile Include="Forme.cpp" />
+    <ClCompile Include="Formules.cpp" />
     <ClCompile Include="Fusee.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Moteur.cpp" />

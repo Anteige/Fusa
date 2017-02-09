@@ -12,7 +12,7 @@
 #include <windows.h>
 
 #include "Fusee.h"
-#include "Formules.cpp"
+#include "Cercle.h"
 
 #pragma comment(lib, "winmm.lib")
 
@@ -218,7 +218,10 @@ int main() {
 	afficherIntroduction();
 	NettoyerConsole(0);
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
-	Sauvegarde(fusee);
-	cout << fusee.obtenirMasse();
+	Aileron test;
+	Cercle ctest;
+	ctest.mettreRayon(Donnee("Les ", 12, "Doigts de la main"));
+	test.mettreForme(&ctest);
+	cout << test.obtenirForme()->obtenirAire();
 	Sleep(50000000);
 } 

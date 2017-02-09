@@ -6,8 +6,8 @@
 /// \description	Ce fichier contient des formules de bases en physique
 ////////////////////////////////////////////////////////////////////////////////
 
-static const double	GRAVITE = 9.81,
-					PI = 3.14;
+#include "Cercle.h"
+static const double	GRAVITE = 9.81;
 
 
 double CalculerForce(double masse, double acceleration)

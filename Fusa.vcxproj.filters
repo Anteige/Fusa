@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Geometrie">
+      <UniqueIdentifier>{d1b7c1f2-93a2-4b6f-ae49-b2cede8913e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Composantes">
+      <UniqueIdentifier>{2537de4d-637f-4e1c-984d-c88d2407be34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Composantes">
+      <UniqueIdentifier>{d3bc3dae-8fc6-4021-9b2e-0110b53f76e7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\TeamSkyreachers\Fusa\Sauvegarde.bin">
@@ -28,64 +37,79 @@
     </Media>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Moteur.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Trajectoire.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Aileron.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Carburant.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
-    <ClInclude Include="Cylindre.h">
-      <Filter>Fichiers d%27en-tête</Filter>
-    </ClInclude>
     <ClInclude Include="Donnee.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Fusee.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="Cercle.h">
+      <Filter>Fichiers d%27en-tête\Geometrie</Filter>
     </ClInclude>
-    <ClInclude Include="ObjetPhysique.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="Forme.h">
+      <Filter>Fichiers d%27en-tête\Geometrie</Filter>
+    </ClInclude>
+    <ClInclude Include="Aileron.h">
+      <Filter>Fichiers d%27en-tête\Composantes</Filter>
+    </ClInclude>
+    <ClInclude Include="Carburant.h">
+      <Filter>Fichiers d%27en-tête\Composantes</Filter>
     </ClInclude>
     <ClInclude Include="ConePointe.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+      <Filter>Fichiers d%27en-tête\Composantes</Filter>
+    </ClInclude>
+    <ClInclude Include="Cylindre.h">
+      <Filter>Fichiers d%27en-tête\Composantes</Filter>
+    </ClInclude>
+    <ClInclude Include="Fusee.h">
+      <Filter>Fichiers d%27en-tête\Composantes</Filter>
+    </ClInclude>
+    <ClInclude Include="Moteur.h">
+      <Filter>Fichiers d%27en-tête\Composantes</Filter>
+    </ClInclude>
+    <ClInclude Include="Trajectoire.h">
+      <Filter>Fichiers d%27en-tête\Composantes</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjetPhysique.h">
+      <Filter>Fichiers d%27en-tête\Composantes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Moteur.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Aileron.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Carburant.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
-    <ClCompile Include="Cylindre.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
     <ClCompile Include="Donnee.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Fusee.cpp">
+    <ClCompile Include="Forme.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="ObjetPhysique.cpp">
+    <ClCompile Include="Cercle.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Trajectoire.cpp">
+    <ClCompile Include="Formules.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Aileron.cpp">
+      <Filter>Fichiers sources\Composantes</Filter>
+    </ClCompile>
+    <ClCompile Include="Carburant.cpp">
+      <Filter>Fichiers sources\Composantes</Filter>
     </ClCompile>
     <ClCompile Include="ConePointe.cpp">
-      <Filter>Fichiers sources</Filter>
+      <Filter>Fichiers sources\Composantes</Filter>
+    </ClCompile>
+    <ClCompile Include="Cylindre.cpp">
+      <Filter>Fichiers sources\Composantes</Filter>
+    </ClCompile>
+    <ClCompile Include="Fusee.cpp">
+      <Filter>Fichiers sources\Composantes</Filter>
+    </ClCompile>
+    <ClCompile Include="Moteur.cpp">
+      <Filter>Fichiers sources\Composantes</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjetPhysique.cpp">
+      <Filter>Fichiers sources\Composantes</Filter>
+    </ClCompile>
+    <ClCompile Include="Trajectoire.cpp">
+      <Filter>Fichiers sources\Composantes</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

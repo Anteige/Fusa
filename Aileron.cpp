@@ -46,7 +46,7 @@ Donnee Aileron::obtenirForce() const
 * Paramètres:	aucun
 * Retour:		(string) la forme de l'aileron
 ********************************************************************************/
-string Aileron::obtenirForme() const
+Forme* Aileron::obtenirForme() const
 {
 	return forme_;
 }
@@ -90,7 +90,7 @@ void Aileron::mettreForce(Donnee force)
 * Paramètres:	- (string) forme :			a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void Aileron::mettreForme(string forme)
+void Aileron::mettreForme(Forme* forme)
 {
 	forme_ = forme;
 }

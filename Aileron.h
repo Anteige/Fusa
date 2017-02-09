@@ -10,6 +10,7 @@
 #define _AILERON_H_
 
 #include "ObjetPhysique.h"
+#include "Forme.h"
 #include "Donnee.h"
 
 using namespace std;
@@ -23,20 +24,20 @@ public:
 	// Methodes d'acces.
 	Donnee	obtenirAire()		const;
 	Donnee	obtenirForce()		const;
-	string	obtenirForme()		const;
+	Forme*	obtenirForme()		const;
 	Donnee	obtenirResistance()	const;
 
 	// Methodes de modifications.
 	void	mettreAire(Donnee aire);
 	void	mettreForce(Donnee force);
-	void	mettreForme(string forme);
+	void	mettreForme(Forme* forme);
 	void	mettreResistance(Donnee resistance);
 
 private:
 	// Attributs
 	Donnee	aire_;
 	Donnee	force_;
-	string	forme_;
+	Forme*	forme_;
 	Donnee	resistance_;
 };
 
