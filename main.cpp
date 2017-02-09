@@ -177,9 +177,16 @@ void afficherIntroduction() {
 
 #pragma endregion fonctions
 
-#pragma region Memoire
+#pragma region Manipulations de Fusee
 
-void Sauvegarder(const Fusee& fusee) 
+void Initialiser(Fusee& fusee)
+{
+	fusee.obtenirCarburant().mettrePression(Donnee("Pression", 0.0 , "pascales"));
+	fusee.obtenirCarburant().mettreMasse(Donnee("Masse", 0.0 , "grammes"));
+	fusee.obtenirCarburant().mettrePoussee(Donnee("Poussee", 0.0, "Newtons"));
+}
+
+void Sauvegarder(Fusee& fusee) 
 {
 	ofstream fichier("Sauvegarde.bin", ios::binary);
 
@@ -189,7 +196,7 @@ void Sauvegarder(const Fusee& fusee)
 
 }
 
-void Chargement(const Fusee& fusee)
+void Chargement(Fusee& fusee)
 {
 	ifstream fichier("Sauvegarde.bin", ios::binary);
 
@@ -220,11 +227,6 @@ int main() {
 	NettoyerConsole(FALSE);
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 
-	Carburant test;
-	test.mettrePression(Donnee("Pression", 1 , "Atmosphere"));
-	test.mettreMasse(Donnee("Masse", 8.43, "Kilogrammes"));
-	test.mettrePoussee(Donnee("Poussee", 1, "Newtons"));
-	fusee.mettreCarburant(test);
 	cout << fusee.obtenirCarburant();
 	cout << fusee.obtenirTrajectoire();
 	Sauvegarder(fusee);

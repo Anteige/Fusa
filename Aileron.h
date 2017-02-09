@@ -22,13 +22,11 @@ public:
 
 	// Methodes d'acces.
 	Donnee	obtenirForce()		const;
-	string	obtenirForme()		const;
 	Donnee	obtenirResistance()	const;
 
 	// Methodes de modifications.
-	void	mettreForce(Donnee force);
-	void	mettreForme(string forme);
-	void	mettreResistance(Donnee resistance);
+	void	mettreForce(const Donnee& force);
+	void	mettreResistance(const Donnee& resistance);
 
 private:
 

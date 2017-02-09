@@ -9,7 +9,6 @@
 #ifndef _OBJETPHYSIQUE_H_
 #define _OBJETPHYSIQUE_H_
 
-#include <vector>
 #include "Donnee.h"
 
 using namespace std;
@@ -34,7 +33,7 @@ public:
 
 private:
 	// Attributs
-	vector<Donnee> centreDeMasse_;
+	Donnee centreDeMasse_[N_AXES];
 	Donnee	masse_;
 };
 
