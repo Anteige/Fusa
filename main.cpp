@@ -181,9 +181,17 @@ void afficherIntroduction() {
 
 void Initialiser(Fusee& fusee)
 {
-	fusee.obtenirCarburant().mettrePression(Donnee("Pression", 0.0 , "pascales"));
-	fusee.obtenirCarburant().mettreMasse(Donnee("Masse", 0.0 , "grammes"));
-	fusee.obtenirCarburant().mettrePoussee(Donnee("Poussee", 0.0, "Newtons"));
+	Carburant carburant = fusee.obtenirCarburant();
+	carburant.mettrePression(Donnee("Pression", 0.0 , "pascales"));
+	carburant.mettreMasse(Donnee("Masse", 0.0, "grammes"));
+	carburant.mettrePoussee(Donnee("Poussee", 0.0, "Newtons"));
+	fusee.mettreCarburant(carburant);
+
+	Trajectoire trajectoire = fusee.obtenirTrajectoire();
+	trajectoire.mettreAltitudeMax(Donnee("Altitude maximale", 0.0, "metres"));
+	trajectoire.mettreDistance(Donnee("Distance", 0.0, "metres"));
+	trajectoire.mettreTemps(Donnee("Temps", 0.0, "minutes"));
+	fusee.mettreTrajectoire(trajectoire);
 }
 
 void Sauvegarder(Fusee& fusee) 
@@ -223,7 +231,7 @@ int main() {
 	afficherIntroduction();
 
 	Chargement(fusee);
-
+	Initialiser(fusee);
 	NettoyerConsole(FALSE);
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 
