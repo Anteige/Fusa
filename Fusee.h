@@ -11,7 +11,7 @@
 
 #include "Aileron.h"
 #include "Carburant.h"
-#include "ConePointe.h"
+#include "Pointe.h"
 #include "Cylindre.h"
 #include "Moteur.h"
 #include "Trajectoire.h"
@@ -27,7 +27,7 @@ public:
 	// Methodes d'acces.
 	Aileron		obtenirAileron()		const;
 	Carburant	obtenirCarburant()		const;
-	ConePointe	obtenirConePointe()		const;
+	Pointe		obtenirPointe()			const;
 	Cylindre	obtenirCylindre()		const;
 	Moteur		obtenirMoteur()			const;
 	Trajectoire	obtenirTrajectoire()	const;
@@ -35,7 +35,7 @@ public:
 	// Methodes de modifications.
 	void	mettreAileron(const Aileron& aileron);
 	void	mettreCarburant(const Carburant& carburant);
-	void	mettreConePointe(const ConePointe& conePointe);
+	void	mettrePointe(const Pointe& Pointe);
 	void	mettreCylindre(const Cylindre& cylindre);
 	void	mettreMoteur(const Moteur& moteur);
 	void	mettreTrajectoire(const Trajectoire& trajectoire);
@@ -44,7 +44,7 @@ private:
 	// Attributs
 	Aileron			aileron_;
 	Carburant		carburant_;
-	ConePointe		conePointe_;
+	Pointe			Pointe_;
 	Cylindre		cylindre_;
 	Moteur			moteur_;
 	Trajectoire		trajectoire_;

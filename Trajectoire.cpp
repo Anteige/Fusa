@@ -94,7 +94,8 @@ void Trajectoire::mettreTemps(Donnee temps)
 ********************************************************************************/
 ostream & operator<<(ostream & out, const Trajectoire& trajectoire)
 {
-	out << "Voici les parametres de la trajectoire /" << endl << endl
+	out << "___________________________________________________________" << endl
+		<< "Voici les parametres de la trajectoire paraboloique /" << endl << endl
 		<< trajectoire.obtenirAltitudeMax() << endl
 		<< trajectoire.obtenirDistance() << endl
 		<< trajectoire.obtenirTemps() << endl;

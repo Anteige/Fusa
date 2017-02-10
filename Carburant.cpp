@@ -72,7 +72,8 @@ void Carburant::mettrePression(const Donnee& pression)
 *******************************************************************************/
 ostream& operator<<(ostream& out, const Carburant& carburant)
 {
-	out << "Voici les parametres du carburant /" << endl << endl
+	out << "___________________________________________________________" << endl
+		<< "Voici les parametres du carburant / " << endl << endl
 		<< carburant.obtenirPoussee()	<< endl
 		<< carburant.obtenirPression()	<< endl
 		<< carburant.obtenirMasse()		<< endl;

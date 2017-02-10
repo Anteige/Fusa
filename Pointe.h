@@ -1,37 +1,37 @@
 ////////////////////////////////////////////////////////////////////////////////
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
-/// \fichier		ConePointe.h
+/// \fichier		Pointe.h
 /// \date			07/02/2017
-/// \description	Definition de la classe ConePointe
+/// \description	Definition de la classe Pointe
 ////////////////////////////////////////////////////////////////////////////////
 
-#ifndef _CONEPOINTE_H_
-#define _CONEPOINTE_H_
+#ifndef _POINTE_H_
+#define _POINTE_H_
 
 #include "ObjetPhysique.h"
 #include "Donnee.h"
 
 using namespace std;
 
-class ConePointe : public ObjetPhysique
+class Pointe : public ObjetPhysique
 {
 public:
 	// Constructeurs.
-	ConePointe();
+	Pointe();
 
 	// Methodes d'acces.
-	string	obtenirForme()		const;
 	Donnee	obtenirResistance()	const;
 
 	// Methodes de modifications.
-	void	mettreForme(string forme);
 	void	mettreResistance(Donnee resistance);
+
+	// Affichage
+	friend ostream& operator<<(ostream& out, const Pointe& pointe);
 
 private:
 	// Attributs
 	Donnee	resistance_;
-	char	forme_[LONGUEUR_MOT_MAX];
 };
 
-#endif // _CONEPOINTE_H_
+#endif // _POINTE_H_

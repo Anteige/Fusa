@@ -62,6 +62,11 @@ Donnee ObjetPhysique::obtenirMasse() const
 	return masse_;
 }
 
+string ObjetPhysique::obtenirForme() const
+{
+	return string(forme_);
+}
+
 /*******************************************************************************
 * Fonction:		ObjetPhysique::mettreCentreDeMasse
 * Description:	mutator du vecteur centreDeMasse_
@@ -86,4 +91,9 @@ void ObjetPhysique::mettreCentreDeMasse(Donnee positionX, Donnee positionY, Donn
 void ObjetPhysique::mettreMasse(Donnee masse)
 {
 	masse_ = masse;
+}
+
+void ObjetPhysique::mettreForme(string forme)
+{
+	strcpy_s(forme_, forme.c_str());
 }

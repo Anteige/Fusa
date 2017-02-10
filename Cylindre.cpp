@@ -61,3 +61,20 @@ void Cylindre::mettreVolume(Donnee volume)
 {
 	volume_ = volume;
 }
+
+/*******************************************************************************
+* Fonction:		Carburant::operator<<
+* Description:	permet l'affichage des parametres du cylindre
+* Paramètres:	- (ostream)		out : le flux de sortie
+				- (Cylindre)	cylindre : le cylindre a afficher
+* Retour:		(ostream) pour l'appel en cascade
+*******************************************************************************/
+ostream & operator<<(ostream & out, const Cylindre & cylindre)
+{
+	out << "___________________________________________________________" << endl
+		<< "Voici les parametres du cylindre /" << endl << endl
+		<< cylindre.obtenirPressionMaximale() << endl
+		<< cylindre.obtenirVolume() << endl
+		<< cylindre.obtenirMasse() << endl;
+	return out;
+}

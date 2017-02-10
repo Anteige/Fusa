@@ -19,17 +19,6 @@ Moteur::Moteur()
 }
 
 /*******************************************************************************
-* Fonction:		Moteur::obtenirForme
-* Description:	accessor de forme_
-* Paramètres:	aucun
-* Retour:		(string) la forme du moteur
-********************************************************************************/
-string Moteur::obtenirForme() const
-{
-	return forme_;
-}
-
-/*******************************************************************************
 * Fonction:		Moteur::obtenirPoussee
 * Description:	accessor de pousse_
 * Paramètres:	aucun
@@ -52,17 +41,6 @@ Donnee Moteur::obtenirTemperature() const
 }
 
 /*******************************************************************************
-* Fonction:		Trajectoire::mettreForme
-* Description:	mutator de forme_
-* Paramètres:	- (String) forme :					a modifier (IN)
-* Retour:		aucun
-********************************************************************************/
-void Moteur::mettreForme(string forme)
-{
-	strcpy_s(forme_, forme.c_str());
-}
-
-/*******************************************************************************
 * Fonction:		Trajectoire::mettrePoussee
 * Description:	mutator de pousse_
 * Paramètres:	- (Donnee) pousse :					a modifier (IN)
@@ -82,4 +60,19 @@ void Moteur::mettrePoussee(Donnee poussee)
 void Moteur::mettreTemperature(Donnee temperature)
 {
 	temperature_ = temperature;
+}
+
+ostream & operator<<(ostream & out, const Moteur & moteur)
+{
+	out << setfill(' ')
+		<< "___________________________________________________________" << endl
+		<< "Voici les parametres du moteur " << "en forme de "
+		<< moteur.obtenirForme() << ' ' << "/ " << endl << endl
+		<< moteur.obtenirMasse() << endl
+		<< moteur.obtenirPoussee() << endl
+		<< moteur.obtenirTemperature() << endl
+		<< moteur.obtenirCentreDeMasseEnX()
+		<< moteur.obtenirCentreDeMasseEnY()
+		<< moteur.obtenirCentreDeMasseEnZ() << endl;
+	return out;
 }

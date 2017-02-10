@@ -28,6 +28,9 @@ public:
 	void	mettrePressionMaximale(Donnee pressionMaximale);
 	void	mettreVolume(Donnee volume);
 
+	// Affichage
+	friend ostream& operator<<(ostream& out, const Cylindre& cylindre);
+
 private:
 	// Attributs
 	Donnee	pressionMaximale_;

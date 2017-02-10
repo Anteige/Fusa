@@ -55,9 +55,6 @@
     <ClInclude Include="Carburant.h">
       <Filter>Fichiers d%27en-tête\Fusee</Filter>
     </ClInclude>
-    <ClInclude Include="ConePointe.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
     <ClInclude Include="Cylindre.h">
       <Filter>Fichiers d%27en-tête\Fusee</Filter>
     </ClInclude>
@@ -71,6 +68,9 @@
       <Filter>Fichiers d%27en-tête\Fusee</Filter>
     </ClInclude>
     <ClInclude Include="ObjetPhysique.h">
+      <Filter>Fichiers d%27en-tête\Fusee</Filter>
+    </ClInclude>
+    <ClInclude Include="Pointe.h">
       <Filter>Fichiers d%27en-tête\Fusee</Filter>
     </ClInclude>
   </ItemGroup>
@@ -88,9 +88,6 @@
       <Filter>Fichiers sources\Fusee</Filter>
     </ClCompile>
     <ClCompile Include="Carburant.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
-    <ClCompile Include="ConePointe.cpp">
       <Filter>Fichiers sources\Fusee</Filter>
     </ClCompile>
     <ClCompile Include="Cylindre.cpp">
@@ -113,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="Forme.cpp">
       <Filter>Fichiers sources\Forme</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointe.cpp">
+      <Filter>Fichiers sources\Fusee</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

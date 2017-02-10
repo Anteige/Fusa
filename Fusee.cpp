@@ -41,14 +41,14 @@ Carburant Fusee::obtenirCarburant() const
 }
 
 /*******************************************************************************
-* Fonction:		Fusee::obtenirConePointe
-* Description:	accessor de conePointe_
+* Fonction:		Fusee::obtenirPointe
+* Description:	accessor de Pointe_
 * Paramètres:	aucun
-* Retour:		(ConePointe) le cone a la pointe de la fusee
+* Retour:		(Pointe) la pointe de la fusee
 ********************************************************************************/
-ConePointe Fusee::obtenirConePointe() const
+Pointe Fusee::obtenirPointe() const
 {
-	return conePointe_;
+	return Pointe_;
 }
 
 /*******************************************************************************
@@ -112,9 +112,9 @@ void Fusee::mettreCarburant(const Carburant& carburant)
 * Paramètres:	- (ConePointe) ConePointe :		a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void Fusee::mettreConePointe(const ConePointe& conePointe)
+void Fusee::mettrePointe(const Pointe& Pointe)
 {
-	conePointe_ = conePointe;
+	Pointe_ = Pointe;
 }
 
 /*******************************************************************************

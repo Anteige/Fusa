@@ -148,7 +148,7 @@
     <ClInclude Include="Aileron.h" />
     <ClInclude Include="Carburant.h" />
     <ClInclude Include="Cercle.h" />
-    <ClInclude Include="ConePointe.h" />
+    <ClInclude Include="Pointe.h" />
     <ClInclude Include="Cylindre.h" />
     <ClInclude Include="Donnee.h" />
     <ClInclude Include="Forme.h" />
@@ -161,7 +161,7 @@
     <ClCompile Include="Aileron.cpp" />
     <ClCompile Include="Carburant.cpp" />
     <ClCompile Include="Cercle.cpp" />
-    <ClCompile Include="ConePointe.cpp" />
+    <ClCompile Include="Pointe.cpp" />
     <ClCompile Include="Cylindre.cpp" />
     <ClCompile Include="Donnee.cpp" />
     <ClCompile Include="Forme.cpp" />

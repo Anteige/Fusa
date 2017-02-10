@@ -21,18 +21,18 @@ public:
 	Moteur();
 
 	// Methodes d'acces.
-	string	obtenirForme()			const;
 	Donnee	obtenirPoussee()		const;
 	Donnee	obtenirTemperature()	const;
 
 	// Methodes de modifications.
-	void	mettreForme(string forme);
 	void	mettrePoussee(Donnee poussee);
 	void	mettreTemperature(Donnee temperature);
 
+	// Affichage
+	friend ostream& operator<<(ostream& out, const Moteur& moteur);
+
 private:
 	// Attributs
-	char	forme_[LONGUEUR_MOT_MAX];
 	Donnee	poussee_;
 	Donnee	temperature_;
 };

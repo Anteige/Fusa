@@ -32,7 +32,6 @@ private:
 
 	// Attributs
 	Donnee	force_;
-	char	forme_[LONGUEUR_MOT_MAX];
 	Donnee	resistance_;
 };
 

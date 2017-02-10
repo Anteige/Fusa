@@ -1,54 +1,33 @@
 ////////////////////////////////////////////////////////////////////////////////
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
-/// \fichier		ConePointe.cpp
+/// \fichier		Pointe.cpp
 /// \date			07/02/2017
-/// \description	Initialisation de la classe ConePointe
+/// \description	Initialisation de la classe Pointe
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "ConePointe.h"
+#include "Pointe.h"
+#include <iomanip>
 
 /*******************************************************************************
-* Fonction:		ConePointe::ConePointe
+* Fonction:		Pointe::Pointe
 * Description:	Constructeur par defaut
 * Paramètres:	aucun
 * Retour:		aucun
 ********************************************************************************/
-ConePointe::ConePointe()
+Pointe::Pointe()
 {
 }
 
 /*******************************************************************************
-* Fonction:		ConePointe::obtenirForme
-* Description:	accessor de forme_
-* Paramètres:	aucun
-* Retour:		(Donnee) la forme du Cone a la pointe
-********************************************************************************/
-string ConePointe::obtenirForme() const
-{
-	return forme_;
-}
-
-/*******************************************************************************
-* Fonction:		ConePointe::obtenirResistance
+* Fonction:		Pointe::obtenirResistance
 * Description:	accessor de resistance_
 * Paramètres:	aucun
 * Retour:		(Donnee) la resistance du Cone a la pointe
 ********************************************************************************/
-Donnee ConePointe::obtenirResistance() const
+Donnee Pointe::obtenirResistance() const
 {
 	return resistance_;
-}
-
-/*******************************************************************************
-* Fonction:		Cylindre::mettreForme
-* Description:	mutator de forme_
-* Paramètres:	- (string) forme :						a modifier (IN)
-* Retour:		aucun
-********************************************************************************/
-void ConePointe::mettreForme(string forme)
-{
-	strcpy_s(forme_, forme.c_str());
 }
 
 /*******************************************************************************
@@ -57,7 +36,21 @@ void ConePointe::mettreForme(string forme)
 * Paramètres:	- (Donnee) resistance :					a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void ConePointe::mettreResistance(Donnee resistance)
+void Pointe::mettreResistance(Donnee resistance)
 {
 	resistance_ = resistance;
+}
+
+ostream & operator<<(ostream & out, const Pointe & pointe)
+{
+	out << setfill(' ')
+		<< "___________________________________________________________" << endl
+		<< "Voici les parametres de la pointe " << "en forme de "
+		<< pointe.obtenirForme() << ' ' << "/ " << endl << endl
+		<< pointe.obtenirResistance() << endl
+		<< pointe.obtenirMasse() << endl
+		<< pointe.obtenirCentreDeMasseEnX()
+		<< pointe.obtenirCentreDeMasseEnY()
+		<< pointe.obtenirCentreDeMasseEnZ() << endl;
+	return out;
 }
