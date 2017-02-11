@@ -29,6 +29,12 @@ Donnee Aileron::obtenirForce() const
 	return force_;
 }
 
+Donnee Aileron::obtenirAire() const
+{
+	return aire_;
+}
+
+
 /*******************************************************************************
 * Fonction:		Aileron::obtenirResistance
 * Description:	accessor de resistance_
@@ -51,6 +57,11 @@ void Aileron::mettreForce(const Donnee& force)
 	force_ = force;
 }
 
+void Aileron::mettreAire(const Donnee& aire)
+{
+	aire_ = aire;
+}
+
 /*******************************************************************************
 * Fonction:		mettreResistance
 * Description:	mutator de resistance_
@@ -60,4 +71,18 @@ void Aileron::mettreForce(const Donnee& force)
 void Aileron::mettreResistance(const Donnee& resistance)
 {
 	resistance_ = resistance;
+}
+
+ostream & operator<<(ostream & out, const Aileron & aileron)
+{
+	out << setfill(' ')
+		<< "___________________________________________________________" << endl
+		<< "Voici les parametres d'un aileron " << "en forme de "
+		<< aileron.obtenirForme() << ' ' << "/ " << endl << endl
+		<< aileron.obtenirForce() << endl
+		<< aileron.obtenirResistance() << endl
+		<< aileron.obtenirAire() << endl
+		<< aileron.obtenirCentreDeMasseEnX()
+		<< aileron.obtenirCentreDeMasseEnY()
+		<< aileron.obtenirCentreDeMasseEnZ() << endl;
 }

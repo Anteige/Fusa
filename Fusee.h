@@ -40,6 +40,9 @@ public:
 	void	mettreMoteur(const Moteur& moteur);
 	void	mettreTrajectoire(const Trajectoire& trajectoire);
 
+	//affichage
+	friend ostream & operator<<(ostream & out, const Fusee& fusee);
+
 private:
 	// Attributs
 	Aileron			aileron_;

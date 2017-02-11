@@ -149,3 +149,14 @@ void Fusee::mettreTrajectoire(const Trajectoire& trajectoire)
 {
 	trajectoire_ = trajectoire;
 }
+
+ostream & operator<<(ostream & out, const Fusee& fusee)
+{
+	out << "___________________________________________________________" << endl
+		<< "Voici les parametres de la fusee /" << endl << endl
+		<< fusee.obtenirMasse() << endl
+		<< fusee.obtenirCentreDeMasseEnX()
+		<< fusee.obtenirCentreDeMasseEnY()
+		<< fusee.obtenirCentreDeMasseEnZ() << endl;
+	return out;
+}

@@ -23,14 +23,20 @@ public:
 	// Methodes d'acces.
 	Donnee	obtenirForce()		const;
 	Donnee	obtenirResistance()	const;
+	Donnee	obtenirAire()		const;
 
 	// Methodes de modifications.
 	void	mettreForce(const Donnee& force);
 	void	mettreResistance(const Donnee& resistance);
+	void	mettreAire(const Donnee& aire);
+
+	// Affichage
+	friend ostream& operator<<(ostream& out, const Aileron& aileron);
 
 private:
 
 	// Attributs
+	Donnee	aire_;
 	Donnee	force_;
 	Donnee	resistance_;
 };

@@ -212,11 +212,26 @@ void Initialiser(Fusee& fusee)
 								Donnee("", 0.0, "metres [Z]"));
 	fusee.mettreMoteur(moteur);
 
+	Aileron aileron = fusee.obtenirAileron();
+	aileron.mettreForce(Donnee("Force", 0.0, "Newton"));
+	aileron.mettreResistance(Donnee("Resistance", 0.0, "unites"));
+	aileron.mettreAire(Donnee("Aire", 0.0, "Centimetres ^ 2"));
+	aileron.mettreForme("carre");
+	aileron.mettreCentreDeMasse(Donnee("Centre de masse", 0.0, "metres [X]"),
+								Donnee("", 0.0, "metres [Y]"),
+								Donnee("", 0.0, "metres [Z]"));
+	fusee.mettreAileron(aileron);
+
 	Trajectoire trajectoire = fusee.obtenirTrajectoire();
 	trajectoire.mettreAltitudeMax(Donnee("Altitude maximale", 0.0, "metres"));
 	trajectoire.mettreDistance(Donnee("Distance", 0.0, "metres"));
 	trajectoire.mettreTemps(Donnee("Temps", 0.0, "minutes"));
 	fusee.mettreTrajectoire(trajectoire);
+
+	fusee.mettreMasse(Donnee("Masse", 0.0, "grammes"));
+	fusee.mettreCentreDeMasse(	Donnee("Centre de masse", 0.0, "metres [X]"),
+								Donnee("", 0.0, "metres [Y]"),
+								Donnee("", 0.0, "metres [Z]"));
 
 }
 
@@ -261,10 +276,12 @@ int main() {
 	NettoyerConsole(FALSE);
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 
+	cout << fusee;
 	cout << fusee.obtenirPointe();
 	cout << fusee.obtenirCylindre();
 	cout << fusee.obtenirCarburant();
 	cout << fusee.obtenirMoteur();
+	cout << fusee.obtenirAileron();
 	cout << fusee.obtenirTrajectoire();
 	Sauvegarder(fusee);
 	Sleep(50000000);
