@@ -1,4 +1,0 @@
-﻿  Carburant.cpp
-  Fusee.cpp
-  main.cpp
-LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'C:\Users\Antoine Gaulin\documents\visual studio 2017\Projects\TeamSkyreachers\Release\Fusa.exe'
