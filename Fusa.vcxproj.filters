@@ -67,11 +67,11 @@
     <ClInclude Include="Trajectoire.h">
       <Filter>Fichiers d%27en-tête\Fusee</Filter>
     </ClInclude>
-    <ClInclude Include="ObjetPhysique.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
     <ClInclude Include="Pointe.h">
       <Filter>Fichiers d%27en-tête\Fusee</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjetPhysique.h">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -99,9 +99,6 @@
     <ClCompile Include="Moteur.cpp">
       <Filter>Fichiers sources\Fusee</Filter>
     </ClCompile>
-    <ClCompile Include="ObjetPhysique.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
     <ClCompile Include="Trajectoire.cpp">
       <Filter>Fichiers sources\Fusee</Filter>
     </ClCompile>
@@ -113,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="Pointe.cpp">
       <Filter>Fichiers sources\Fusee</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjetPhysique.cpp">
+      <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -15,7 +15,7 @@
 * Paramètres:	aucun
 * Retour:		aucun
 ********************************************************************************/
-Pointe::Pointe()
+Pointe::Pointe() : resistance_(Donnee("Resistance"))
 {
 }
 

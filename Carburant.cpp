@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Carburant.cpp
-/// \date			02/02/2017 - MAJ 07/02/2017
+/// \date			02/02/2017 - MAJ 24/02/2017
 /// \description	Implementation de la classe Carburant
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -14,7 +14,8 @@
 * Paramètres:	aucun
 * Retour:		aucun
 *******************************************************************************/
-Carburant::Carburant()
+Carburant::Carburant() : 
+	poussee_(Donnee("Poussee")), pression_(Donnee("Pression"))
 {
 }
 

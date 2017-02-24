@@ -2,24 +2,11 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Donnee.cpp
-/// \date			31/01/2017 - MAJ 07/02/2017
+/// \date			31/01/2017 - MAJ 24/02/2017
 /// \description	Implementation de la classe Donnee
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "Donnee.h"
-
-/*******************************************************************************
-* Fonction:		Donnee::Donnee
-* Description:	Constructeur par defaut
-* Paramètres:	aucun
-* Retour:		aucun
-********************************************************************************/
-Donnee::Donnee()
-{
-	strcpy_s(nom_, "DefaultParam");
-	valeur_ = 0.0;
-	strcpy_s(unite_, "unites");
-}
 
 /*******************************************************************************
 * Fonction:		Donnee::Donnee
@@ -29,11 +16,9 @@ Donnee::Donnee()
 				- (string) unite :		a initialiser (IN)
 * Retour:		aucun
 ********************************************************************************/
-Donnee::Donnee(string nom, double valeur, string unite)
+Donnee::Donnee(string nom, double valeur, string unite) :
+	nom_(nom), valeur_(valeur), unite_(unite)
 {
-	strcpy_s(nom_, nom.c_str());
-	valeur_ = valeur;
-	strcpy_s(unite_, unite.c_str());
 }
 
 /*******************************************************************************
@@ -44,7 +29,7 @@ Donnee::Donnee(string nom, double valeur, string unite)
 ********************************************************************************/
 string Donnee::obtenirNom() const
 {
-	return string(nom_);
+	return nom_;
 }
 
 /*******************************************************************************
@@ -66,7 +51,7 @@ double Donnee::obtenirValeur() const
 ********************************************************************************/
 string Donnee::obtenirUnite() const
 {
-	return string(unite_);
+	return unite_;
 }
 
 /*******************************************************************************
@@ -77,7 +62,7 @@ string Donnee::obtenirUnite() const
 ********************************************************************************/
 void Donnee::mettreNom(string nom)
 {
-	strcpy_s(nom_, nom.c_str());
+	nom_ = nom;
 }
 
 /*******************************************************************************
@@ -99,7 +84,7 @@ void Donnee::mettreValeur(double valeur)
 ********************************************************************************/
 void Donnee::mettreUnite(string unite)
 {
-	strcpy_s(unite_, unite.c_str());
+	unite_ = unite;
 }
 
 /********************************************************************************

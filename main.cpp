@@ -2,7 +2,7 @@
 /// Fusa			version 1 - alpha
 /// \auteur			Antoine Gaulin
 /// \fichier		main.cpp
-/// \date			31/12/2016 - MAJ 31/01/2017
+/// \date			31/12/2016 - MAJ 24/02/2017
 /// \description	Implementation de la classe Donnee
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -179,62 +179,6 @@ void afficherIntroduction() {
 
 #pragma region Manipulations de Fusee
 
-void Initialiser(Fusee& fusee)
-{
-	Pointe pointe = fusee.obtenirPointe();
-	pointe.mettreForme("triangle");
-	pointe.mettreMasse(Donnee("Masse", 0.0, "grammes"));
-	pointe.mettreResistance(Donnee("Resisance", 0.0, "unites"));
-	pointe.mettreCentreDeMasse(	Donnee("Centre de masse", 0.0, "metres [X]"), 
-								Donnee("", 0.0, "metres [Y]"), 
-								Donnee("", 0.0, "metres [Z]"));
-	fusee.mettrePointe(pointe);
-
-	Cylindre cylindre = fusee.obtenirCylindre();
-	cylindre.mettreMasse(Donnee("Masse", 0.0, "grammes"));
-	cylindre.mettrePressionMaximale(Donnee("Pression Maximale", 0.0, "pascales"));
-	cylindre.mettreVolume(Donnee("Volume", 0.0, "Litres"));
-	fusee.mettreCylindre(cylindre);
-
-	Carburant carburant = fusee.obtenirCarburant();
-	carburant.mettrePression(Donnee("Pression", 0.0 , "pascales"));
-	carburant.mettreMasse(Donnee("Masse", 0.0, "grammes"));
-	carburant.mettrePoussee(Donnee("Poussee", 0.0, "Newtons"));
-	fusee.mettreCarburant(carburant);
-
-	Moteur moteur = fusee.obtenirMoteur();
-	moteur.mettreMasse(Donnee("Masse", 0.0, "grammes"));
-	moteur.mettreTemperature(Donnee("Temperature", 0.0, "degures Celcius"));
-	moteur.mettrePoussee(Donnee("Poussee", 0.0, "Newtons"));
-	moteur.mettreForme("cercle");
-	moteur.mettreCentreDeMasse(	Donnee("Centre de masse", 0.0, "metres [X]"),
-								Donnee("", 0.0, "metres [Y]"),
-								Donnee("", 0.0, "metres [Z]"));
-	fusee.mettreMoteur(moteur);
-
-	Aileron aileron = fusee.obtenirAileron();
-	aileron.mettreForce(Donnee("Force", 0.0, "Newton"));
-	aileron.mettreResistance(Donnee("Resistance", 0.0, "unites"));
-	aileron.mettreAire(Donnee("Aire", 0.0, "Centimetres ^ 2"));
-	aileron.mettreForme("carre");
-	aileron.mettreCentreDeMasse(Donnee("Centre de masse", 0.0, "metres [X]"),
-								Donnee("", 0.0, "metres [Y]"),
-								Donnee("", 0.0, "metres [Z]"));
-	fusee.mettreAileron(aileron);
-
-	Trajectoire trajectoire = fusee.obtenirTrajectoire();
-	trajectoire.mettreAltitudeMax(Donnee("Altitude maximale", 0.0, "metres"));
-	trajectoire.mettreDistance(Donnee("Distance", 0.0, "metres"));
-	trajectoire.mettreTemps(Donnee("Temps", 0.0, "minutes"));
-	fusee.mettreTrajectoire(trajectoire);
-
-	fusee.mettreMasse(Donnee("Masse", 0.0, "grammes"));
-	fusee.mettreCentreDeMasse(	Donnee("Centre de masse", 0.0, "metres [X]"),
-								Donnee("", 0.0, "metres [Y]"),
-								Donnee("", 0.0, "metres [Z]"));
-
-}
-
 void Sauvegarder(Fusee& fusee) 
 {
 	ofstream fichier("Sauvegarde.bin", ios::binary);
@@ -271,8 +215,6 @@ int main() {
 	PlaySound(TEXT("./Soundtrack/Intro.wav"), NULL, SND_FILENAME | SND_ASYNC);
 	afficherIntroduction();
 
-	Chargement(fusee);
-	Initialiser(fusee);
 	NettoyerConsole(FALSE);
 	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
 
@@ -283,6 +225,5 @@ int main() {
 	cout << fusee.obtenirMoteur();
 	cout << fusee.obtenirAileron();
 	cout << fusee.obtenirTrajectoire();
-	Sauvegarder(fusee);
 	Sleep(50000000);
 } 

@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Moteur.h
-/// \date			02/02/2017 - MAJ 07/02/2017
+/// \date			02/02/2017 - MAJ 24/02/2017
 /// \description	Definition de la classe Moteur
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -22,11 +22,9 @@ public:
 
 	// Methodes d'acces.
 	Donnee	obtenirPoussee()		const;
-	Donnee	obtenirTemperature()	const;
 
 	// Methodes de modifications.
 	void	mettrePoussee(Donnee poussee);
-	void	mettreTemperature(Donnee temperature);
 
 	// Affichage
 	friend ostream& operator<<(ostream& out, const Moteur& moteur);
@@ -34,7 +32,6 @@ public:
 private:
 	// Attributs
 	Donnee	poussee_;
-	Donnee	temperature_;
 };
 
 #endif // _MOTEUR_H_

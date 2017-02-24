@@ -14,9 +14,11 @@
 * Paramètres:	aucun
 * Retour:		aucun
 ********************************************************************************/
-Trajectoire::Trajectoire()
+Trajectoire::Trajectoire() : 
+	altitudeMax_(Donnee("Altitude Maximale")),
+	distance_(Donnee("Distance")),
+	temps_(Donnee("Temps"))
 {
-
 }
 
 /*******************************************************************************

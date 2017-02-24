@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		ObjetPhysique.cpp
-/// \date			07/02/2017
+/// \date			07/02/2017 - MAJ 24/02/2017
 /// \description	Implementation de la classe ObjetPhysique
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -14,8 +14,60 @@
 * Paramètres:	aucun
 * Retour:		aucun
 ********************************************************************************/
-ObjetPhysique::ObjetPhysique() : masse_(Donnee())
+ObjetPhysique::ObjetPhysique() :
+	aire_				(Donnee("Aire")),
+	forme_				("Quelconque"),
+	masse_				(Donnee("Masse")),
+	temperature_		(Donnee("Temperature")),
+	volume_				(Donnee("Volume"))
 {
+	centreDeMasse_[X] = Donnee("Position en X");
+	centreDeMasse_[Y] = Donnee("Position en Y");
+	centreDeMasse_[Z] = Donnee("Position en Z");
+}
+
+/*******************************************************************************
+* Fonction:		ObjetPhysique::obtenirForme
+* Description:	accessor de forme_
+* Paramètres:	aucun
+* Retour:		(Donnee) la forme de l'objet
+********************************************************************************/
+string ObjetPhysique::obtenirForme() const
+{
+	return forme_;
+}
+
+/*******************************************************************************
+* Fonction:		ObjetPhysique::obtenirAire
+* Description:	accessor de aire_
+* Paramètres:	aucun
+* Retour:		(Donnee) L'aire de l'objet
+********************************************************************************/
+Donnee ObjetPhysique::obtenirAire() const
+{
+	return aire_;
+}
+
+/*******************************************************************************
+* Fonction:		ObjetPhysique::obtenirVolume
+* Description:	accessor de volume_
+* Paramètres:	aucun
+* Retour:		(Donnee) le volume de l'objet
+********************************************************************************/
+Donnee ObjetPhysique::obtenirVolume() const
+{
+	return volume_;
+}
+
+/*******************************************************************************
+* Fonction:		ObjetPhysique::obtenirMasse
+* Description:	accessor de masse_
+* Paramètres:	aucun
+* Retour:		(Donnee) la masse de l'objet
+********************************************************************************/
+Donnee ObjetPhysique::obtenirMasse() const
+{
+	return masse_;
 }
 
 /*******************************************************************************
@@ -52,30 +104,71 @@ Donnee ObjetPhysique::obtenirCentreDeMasseEnZ() const
 }
 
 /*******************************************************************************
-* Fonction:		ObjetPhysique::obtenirMasse
-* Description:	accessor de masse_
+* Fonction:		ObjetPhysique::obtenirTemperature
+* Description:	accessor de temperature_
 * Paramètres:	aucun
-* Retour:		(Donnee) la masse de l'objet
+* Retour:		(Donnee) la temperature de l'objet
 ********************************************************************************/
-Donnee ObjetPhysique::obtenirMasse() const
+Donnee ObjetPhysique::obtenirTemperature() const
 {
-	return masse_;
+	return temperature_;
 }
 
-string ObjetPhysique::obtenirForme() const
+/*******************************************************************************
+* Fonction:		ObjetPhysique::mettreForme
+* Description:	mutator de forme_
+* Paramètres:	- (Donnee) forme :					a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void ObjetPhysique::mettreForme(string forme)
 {
-	return string(forme_);
+	forme_ = forme;
+}
+
+/*******************************************************************************
+* Fonction:		ObjetPhysique::mettreAire
+* Description:	mutator de aire_
+* Paramètres:	- (Donnee) aire :					a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void ObjetPhysique::mettreAire(const Donnee& aire)
+{
+	aire_ = aire;
+}
+
+/*******************************************************************************
+* Fonction:		ObjetPhysique::mettreVolume
+* Description:	mutator de volume_
+* Paramètres:	- (Donnee) volume :					a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void ObjetPhysique::mettreVolume(const Donnee& volume)
+{
+	volume_ = volume;
+}
+
+/*******************************************************************************
+* Fonction:		ObjetPhysique::mettreMasse
+* Description:	mutator de masse_
+* Paramètres:	- (Donnee) masse :					a modifier (IN)
+* Retour:		aucun
+********************************************************************************/
+void ObjetPhysique::mettreMasse(const Donnee& masse)
+{
+	masse_ = masse;
 }
 
 /*******************************************************************************
 * Fonction:		ObjetPhysique::mettreCentreDeMasse
 * Description:	mutator du vecteur centreDeMasse_
-* Paramètres:	- (Donnee) positionX :			a modifier (IN)
-				- (Donnee) positionY :			a modifier (IN)
-				- (Donnee) positionZ :			a modifier (IN)
+* Paramètres:	- (Donnee) positionX :				a modifier (IN)
+				- (Donnee) positionY :				a modifier (IN)
+				- (Donnee) positionZ :				a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void ObjetPhysique::mettreCentreDeMasse(Donnee positionX, Donnee positionY, Donnee positionZ)
+void ObjetPhysique::mettreCentreDeMasse(const Donnee& positionX, 
+										const Donnee& positionY,
+										const Donnee& positionZ)
 {
 	centreDeMasse_[X] = positionX;
 	centreDeMasse_[Y] = positionY;
@@ -83,17 +176,12 @@ void ObjetPhysique::mettreCentreDeMasse(Donnee positionX, Donnee positionY, Donn
 }
 
 /*******************************************************************************
-* Fonction:		ObjetPhysique::mettreMasse
-* Description:	mutator de masse_
-* Paramètres:	- (Donnee) masse :				a modifier (IN)
+* Fonction:		ObjetPhysique::mettreTemperature
+* Description:	mutator de temperature_
+* Paramètres:	- (Donnee) temperature :			a modifier (IN)
 * Retour:		aucun
 ********************************************************************************/
-void ObjetPhysique::mettreMasse(Donnee masse)
+void ObjetPhysique::mettreTemperature(const Donnee& temperature)
 {
-	masse_ = masse;
-}
-
-void ObjetPhysique::mettreForme(string forme)
-{
-	strcpy_s(forme_, forme.c_str());
+	temperature_ = temperature;
 }

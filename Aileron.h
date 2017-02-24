@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.h
-/// \date			02/02/2017 - MAJ 09/02/2017
+/// \date			02/02/2017 - MAJ 24/02/2017
 /// \description	Definition de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -23,20 +23,16 @@ public:
 	// Methodes d'acces.
 	Donnee	obtenirForce()		const;
 	Donnee	obtenirResistance()	const;
-	Donnee	obtenirAire()		const;
 
 	// Methodes de modifications.
 	void	mettreForce(const Donnee& force);
 	void	mettreResistance(const Donnee& resistance);
-	void	mettreAire(const Donnee& aire);
 
 	// Affichage
 	friend ostream& operator<<(ostream& out, const Aileron& aileron);
 
 private:
-
 	// Attributs
-	Donnee	aire_;
 	Donnee	force_;
 	Donnee	resistance_;
 };

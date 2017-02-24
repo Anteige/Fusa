@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Moteur.cpp
-/// \date			07/02/2017
+/// \date			07/02/2017 - MAJ 24/02/2017
 /// \description	Implementation de la classe Moteur
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -14,7 +14,7 @@
 * Paramètres:	aucun
 * Retour:		aucun
 ********************************************************************************/
-Moteur::Moteur()
+Moteur::Moteur() : poussee_(Donnee("Poussee"))
 {
 }
 
@@ -30,17 +30,6 @@ Donnee Moteur::obtenirPoussee() const
 }
 
 /*******************************************************************************
-* Fonction:		Moteur::obtenirTemperature
-* Description:	accessor de temperature_
-* Paramètres:	aucun
-* Retour:		(Donnee) la temperature du moteur
-********************************************************************************/
-Donnee Moteur::obtenirTemperature() const
-{
-	return temperature_;
-}
-
-/*******************************************************************************
 * Fonction:		Trajectoire::mettrePoussee
 * Description:	mutator de pousse_
 * Paramètres:	- (Donnee) pousse :					a modifier (IN)
@@ -49,17 +38,6 @@ Donnee Moteur::obtenirTemperature() const
 void Moteur::mettrePoussee(Donnee poussee)
 {
 	poussee_ = poussee;
-}
-
-/*******************************************************************************
-* Fonction:		Trajectoire::mettreTemperature
-* Description:	mutator de temperature_
-* Paramètres:	- (Donnee) temperature :			a modifier (IN)
-* Retour:		aucun
-********************************************************************************/
-void Moteur::mettreTemperature(Donnee temperature)
-{
-	temperature_ = temperature;
 }
 
 ostream & operator<<(ostream & out, const Moteur & moteur)

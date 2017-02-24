@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.cpp
-/// \date			02/02/2017 - MAJ 09/02/2017
+/// \date			02/02/2017 - MAJ 24/02/2017
 /// \description	Implementation de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -14,7 +14,7 @@
 * Paramètres:	aucun
 * Retour:		aucun
 *******************************************************************************/
-Aileron::Aileron()
+Aileron::Aileron() : force_(Donnee("Force")), resistance_(Donnee("Resistance"))
 {
 }
 
@@ -28,12 +28,6 @@ Donnee Aileron::obtenirForce() const
 {
 	return force_;
 }
-
-Donnee Aileron::obtenirAire() const
-{
-	return aire_;
-}
-
 
 /*******************************************************************************
 * Fonction:		Aileron::obtenirResistance
@@ -55,11 +49,6 @@ Donnee Aileron::obtenirResistance() const
 void Aileron::mettreForce(const Donnee& force)
 {
 	force_ = force;
-}
-
-void Aileron::mettreAire(const Donnee& aire)
-{
-	aire_ = aire;
 }
 
 /*******************************************************************************

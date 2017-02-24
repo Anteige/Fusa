@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Carburant.h
-/// \date			02/02/2017 - MAJ 07/02/2017
+/// \date			02/02/2017 - MAJ 24/02/2017
 /// \description	Definition de la classe Carburant
 ////////////////////////////////////////////////////////////////////////////////
 

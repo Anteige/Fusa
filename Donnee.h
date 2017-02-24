@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Donnee.h
-/// \date			31/01/2017 - MAJ 09/02/2017
+/// \date			31/01/2017 - MAJ 24/02/2017
 /// \description	Definition de la classe Donnee
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -14,16 +14,12 @@
 
 using namespace std;
 
-const unsigned LONGUEUR_MOT_MAX = 20;
-
 class Donnee 
 {
 public:
-	// Constructeur par defaut.
-	Donnee();
-
-	// Constructeur par parametres.
-	Donnee(string nom, double valeur, string unite);
+	// Constructeur.
+	Donnee(string nom = "Donnee sans nom", double valeur = 0.0, 
+										   string unite = "unites");
 
 	// Methodes d'acces.
 	string	obtenirNom()	const;
@@ -40,9 +36,9 @@ public:
 
 private:
 	// Attributs
-	char	nom_[LONGUEUR_MOT_MAX];
+	string	nom_;
 	double	valeur_;
-	char	unite_[LONGUEUR_MOT_MAX];
+	string	unite_;
 };
 
 #endif // _DONNEE_H_

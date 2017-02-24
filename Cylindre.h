@@ -22,11 +22,9 @@ public:
 
 	// Methodes d'acces.
 	Donnee	obtenirPressionMaximale()	const;
-	Donnee	obtenirVolume()				const;
 
 	// Methodes de modifications.
 	void	mettrePressionMaximale(Donnee pressionMaximale);
-	void	mettreVolume(Donnee volume);
 
 	// Affichage
 	friend ostream& operator<<(ostream& out, const Cylindre& cylindre);
@@ -34,7 +32,6 @@ public:
 private:
 	// Attributs
 	Donnee	pressionMaximale_;
-	Donnee	volume_;
 };
 
 #endif // _Cylindre_H_
