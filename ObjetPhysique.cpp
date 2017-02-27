@@ -16,7 +16,7 @@
 ********************************************************************************/
 ObjetPhysique::ObjetPhysique() :
 	aire_				(Donnee("Aire")),
-	forme_				("Quelconque"),
+	forme_				("indeterminee"),
 	masse_				(Donnee("Masse")),
 	temperature_		(Donnee("Temperature")),
 	volume_				(Donnee("Volume"))

@@ -204,7 +204,7 @@ void Chargement(Fusee& fusee)
 int main() {
 
 	Fusee fusee;
-
+	
 	DefinirLaPolice();
 	cout << "Initialisation..." << endl;
 	Sleep(300);
@@ -216,7 +216,9 @@ int main() {
 	afficherIntroduction();
 
 	NettoyerConsole(FALSE);
-	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME | SND_ASYNC | SND_LOOP);
+	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME| 
+															SND_ASYNC	| 
+															SND_LOOP);
 
 	cout << fusee;
 	cout << fusee.obtenirPointe();
@@ -226,4 +228,4 @@ int main() {
 	cout << fusee.obtenirAileron();
 	cout << fusee.obtenirTrajectoire();
 	Sleep(50000000);
-} 
+}

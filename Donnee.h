@@ -2,7 +2,7 @@
 /// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Donnee.h
-/// \date			31/01/2017 - MAJ 24/02/2017
+/// \date			31/01/2017 - MAJ 26/02/2017
 /// \description	Definition de la classe Donnee
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -31,11 +31,29 @@ public:
 	void	mettreValeur(double valeur);
 	void	mettreUnite(string unite);
 
-	// Affichage
+	// Surcharge des operateurs.
+	Donnee operator+(const Donnee& donnee) const;
+	Donnee operator+(const double& nombre) const;
+	friend Donnee operator+(const double&, const Donnee&);
+
+	Donnee operator-(const Donnee& donnee) const;
+	Donnee operator-(const double& nombre) const;
+	friend Donnee operator-(const double&, const Donnee&);
+
+	Donnee operator*(const Donnee& donnee) const;
+	Donnee operator*(const double& donnee) const;
+	friend Donnee operator*(const double&, const Donnee&);
+
+	Donnee operator/(const Donnee& donnee) const;
+	Donnee operator/(const double& donnee) const;
+	friend Donnee operator/(const double&, const Donnee&);
+
+	Donnee operator^(const double& nombre) const;
+
 	friend ostream& operator<<(ostream& out, const Donnee& donnee);
 
 private:
-	// Attributs
+	// Attributs.
 	string	nom_;
 	double	valeur_;
 	string	unite_;
