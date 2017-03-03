@@ -6,7 +6,7 @@
 /// \description	Initialisation de la classe Pointe
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "Pointe.h"
+#include "../include/Pointe.h"
 #include <iomanip>
 
 /*******************************************************************************

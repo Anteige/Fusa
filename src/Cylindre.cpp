@@ -6,7 +6,7 @@
 /// \description	Implementation de la classe Cylindre
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "Cylindre.h"
+#include "../include/Cylindre.h"
 
 /*******************************************************************************
 * Fonction:		Cylindre::Cylindre

@@ -6,7 +6,7 @@
 /// \description	Implementation de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "Aileron.h"
+#include "../include/Aileron.h"
 
 /*******************************************************************************
 * Fonction:		Aileron::Aileron
@@ -74,4 +74,5 @@ ostream & operator<<(ostream & out, const Aileron & aileron)
 		<< aileron.obtenirCentreDeMasseEnX()
 		<< aileron.obtenirCentreDeMasseEnY()
 		<< aileron.obtenirCentreDeMasseEnZ() << endl;
+	return out;
 }

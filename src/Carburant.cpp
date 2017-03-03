@@ -6,7 +6,7 @@
 /// \description	Implementation de la classe Carburant
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "Carburant.h"
+#include "../include/Carburant.h"
 
 /*******************************************************************************
 * Fonction:		Carburant::Carburant

@@ -6,7 +6,7 @@
 /// \description	Definition de la classe Fusee
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "Fusee.h"
+#include "../include/Fusee.h"
 
 /*******************************************************************************
 * Fonction:		Fusee::Fusee

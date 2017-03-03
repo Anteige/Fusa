@@ -6,7 +6,7 @@
 /// \description	Implementation de la classe Moteur
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "Moteur.h"
+#include "../include/Moteur.h"
 
 /*******************************************************************************
 * Fonction:		Moteur::Moteur

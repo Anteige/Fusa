@@ -11,7 +11,7 @@
 #include <fstream>
 #include <windows.h>
 
-#include "Fusee.h"
+#include "../include/Fusee.h"
 
 #pragma comment(lib, "winmm.lib")
 
@@ -212,13 +212,13 @@ int main() {
 	Sleep(500);
 
 	NettoyerConsole(FALSE);
-	PlaySound(TEXT("./Soundtrack/Intro.wav"), NULL, SND_FILENAME | SND_ASYNC);
+	PlaySound(TEXT("./Fusa/soundtrack/Intro.wav"), NULL, SND_FILENAME | SND_ASYNC);
 	afficherIntroduction();
 
 	NettoyerConsole(FALSE);
-	PlaySound(TEXT("./Soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME| 
-															SND_ASYNC	| 
-															SND_LOOP);
+	PlaySound(TEXT("./Fusa/soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME| 
+																 SND_ASYNC	 | 
+															  	 SND_LOOP);
 
 	cout << fusee;
 	cout << fusee.obtenirPointe();

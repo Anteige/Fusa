@@ -6,7 +6,7 @@
 /// \description	Implémentation de la classe Trajectoire
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "Trajectoire.h"
+#include "../include/Trajectoire.h"
 
 /*******************************************************************************
 * Fonction:		Trajectoire::Trajectoire

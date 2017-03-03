@@ -5,7 +5,7 @@
 /// \brief		Implementation de la classe ObjetPhysique
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "ObjetPhysique.h"
+#include "../include/ObjetPhysique.h"
 
 ObjetPhysique::ObjetPhysique() :
 	aire_				(Donnee("Aire")),

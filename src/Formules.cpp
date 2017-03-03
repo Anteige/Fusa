@@ -6,7 +6,8 @@
 /// \description	Ce fichier contient des formules de bases en physique
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "Cercle.h"
+#include <cmath>
+static const double PI = 3.14;
 static const double	GRAVITE = 9.81;
 
 
