@@ -145,32 +145,28 @@
     <Media Include="..\TeamSkyreachers\Fusa\Soundtrack\MenuPrincipal.wav" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Aileron.h" />
-    <ClInclude Include="Carburant.h" />
-    <ClInclude Include="Cercle.h" />
-    <ClInclude Include="Pointe.h" />
-    <ClInclude Include="Cylindre.h" />
-    <ClInclude Include="Donnee.h" />
-    <ClInclude Include="Forme.h" />
-    <ClInclude Include="Fusee.h" />
-    <ClInclude Include="Moteur.h" />
-    <ClInclude Include="ObjetPhysique.h" />
-    <ClInclude Include="Trajectoire.h" />
+    <ClInclude Include="include\Aileron.h" />
+    <ClInclude Include="include\Carburant.h" />
+    <ClInclude Include="include\Cylindre.h" />
+    <ClInclude Include="include\Donnee.h" />
+    <ClInclude Include="include\Fusee.h" />
+    <ClInclude Include="include\Moteur.h" />
+    <ClInclude Include="include\ObjetPhysique.h" />
+    <ClInclude Include="include\Pointe.h" />
+    <ClInclude Include="include\Trajectoire.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Aileron.cpp" />
-    <ClCompile Include="Carburant.cpp" />
-    <ClCompile Include="Cercle.cpp" />
-    <ClCompile Include="Pointe.cpp" />
-    <ClCompile Include="Cylindre.cpp" />
-    <ClCompile Include="Donnee.cpp" />
-    <ClCompile Include="Forme.cpp" />
-    <ClCompile Include="Formules.cpp" />
-    <ClCompile Include="Fusee.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Moteur.cpp" />
-    <ClCompile Include="ObjetPhysique.cpp" />
-    <ClCompile Include="Trajectoire.cpp" />
+    <ClCompile Include="src\Aileron.cpp" />
+    <ClCompile Include="src\Carburant.cpp" />
+    <ClCompile Include="src\Cylindre.cpp" />
+    <ClCompile Include="src\Donnee.cpp" />
+    <ClCompile Include="src\Formules.cpp" />
+    <ClCompile Include="src\Fusee.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Moteur.cpp" />
+    <ClCompile Include="src\ObjetPhysique.cpp" />
+    <ClCompile Include="src\Pointe.cpp" />
+    <ClCompile Include="src\Trajectoire.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

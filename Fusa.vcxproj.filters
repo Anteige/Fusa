@@ -16,14 +16,8 @@
     <Filter Include="Fichiers d%27en-tête\Fusee">
       <UniqueIdentifier>{2537de4d-637f-4e1c-984d-c88d2407be34}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Fichiers d%27en-tête\Forme">
-      <UniqueIdentifier>{d1b7c1f2-93a2-4b6f-ae49-b2cede8913e7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Fichiers sources\Fusee">
-      <UniqueIdentifier>{d3bc3dae-8fc6-4021-9b2e-0110b53f76e7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Fichiers sources\Forme">
-      <UniqueIdentifier>{9a239d68-81f2-4be9-b399-1c2df81d3abf}</UniqueIdentifier>
+      <UniqueIdentifier>{b3e1273e-1c9a-4d65-b7ad-84096a5fb599}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -40,79 +34,67 @@
     </Media>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Donnee.h">
+    <ClInclude Include="include\Donnee.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
-    <ClInclude Include="Cercle.h">
-      <Filter>Fichiers d%27en-tête\Forme</Filter>
-    </ClInclude>
-    <ClInclude Include="Forme.h">
-      <Filter>Fichiers d%27en-tête\Forme</Filter>
-    </ClInclude>
-    <ClInclude Include="Aileron.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
-    <ClInclude Include="Carburant.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
-    <ClInclude Include="Cylindre.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
-    <ClInclude Include="Fusee.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
-    <ClInclude Include="Moteur.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
-    <ClInclude Include="Trajectoire.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
-    <ClInclude Include="Pointe.h">
-      <Filter>Fichiers d%27en-tête\Fusee</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjetPhysique.h">
+    <ClInclude Include="include\ObjetPhysique.h">
       <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Aileron.h">
+      <Filter>Fichiers d%27en-tête\Fusee</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Carburant.h">
+      <Filter>Fichiers d%27en-tête\Fusee</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Cylindre.h">
+      <Filter>Fichiers d%27en-tête\Fusee</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Fusee.h">
+      <Filter>Fichiers d%27en-tête\Fusee</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pointe.h">
+      <Filter>Fichiers d%27en-tête\Fusee</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trajectoire.h">
+      <Filter>Fichiers d%27en-tête\Fusee</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Moteur.h">
+      <Filter>Fichiers d%27en-tête\Fusee</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Donnee.cpp">
+    <ClCompile Include="src\Formules.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Formules.cpp">
+    <ClCompile Include="src\ObjetPhysique.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
-    <ClCompile Include="Aileron.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
-    <ClCompile Include="Carburant.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
-    <ClCompile Include="Cylindre.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
-    <ClCompile Include="Fusee.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
-    <ClCompile Include="Moteur.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
-    <ClCompile Include="Trajectoire.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
-    <ClCompile Include="Cercle.cpp">
-      <Filter>Fichiers sources\Forme</Filter>
-    </ClCompile>
-    <ClCompile Include="Forme.cpp">
-      <Filter>Fichiers sources\Forme</Filter>
-    </ClCompile>
-    <ClCompile Include="Pointe.cpp">
-      <Filter>Fichiers sources\Fusee</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjetPhysique.cpp">
+    <ClCompile Include="src\Donnee.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Aileron.cpp">
+      <Filter>Fichiers sources\Fusee</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Carburant.cpp">
+      <Filter>Fichiers sources\Fusee</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Cylindre.cpp">
+      <Filter>Fichiers sources\Fusee</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Fusee.cpp">
+      <Filter>Fichiers sources\Fusee</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Moteur.cpp">
+      <Filter>Fichiers sources\Fusee</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Trajectoire.cpp">
+      <Filter>Fichiers sources\Fusee</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pointe.cpp">
+      <Filter>Fichiers sources\Fusee</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

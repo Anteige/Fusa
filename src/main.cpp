@@ -204,7 +204,7 @@ void Chargement(Fusee& fusee)
 int main() {
 
 	Fusee fusee;
-	
+
 	DefinirLaPolice();
 	cout << "Initialisation..." << endl;
 	Sleep(300);
@@ -228,4 +228,5 @@ int main() {
 	cout << fusee.obtenirAileron();
 	cout << fusee.obtenirTrajectoire();
 	Sleep(50000000);
+
 }

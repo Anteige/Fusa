@@ -158,12 +158,18 @@ public:
 ////////////////////////////////////////////////////////////////////////////////
 	Donnee operator^(const double& nombre) const;
 
+<<<<<<< HEAD:Donnee.h
 ////////////////////////////////////////////////////////////////////////////////
 /// \brief	Permet l'affichage d'une donnee
 /// \param	donnee	La donnee a afficher			[in/out]
 /// \param	out		Le flux de sortie				[in/out]
 /// \return	ostream	Permet l'appel en cascade
 ////////////////////////////////////////////////////////////////////////////////
+=======
+	Donnee& operator+=(const Donnee& nombre);
+	Donnee operator+=(const double& nombre);
+
+>>>>>>> origin/master:include/Donnee.h
 	friend ostream& operator<<(ostream& out, const Donnee& donnee);
 
 private:
