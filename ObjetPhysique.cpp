@@ -1,19 +1,12 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa			version 1
-/// \auteur			Antoine Gaulin
-/// \fichier		ObjetPhysique.cpp
-/// \date			07/02/2017 - MAJ 24/02/2017
-/// \description	Implementation de la classe ObjetPhysique
+/// \author		Antoine Gaulin
+/// \file		ObjetPhysique.cpp
+/// \date		07/02/2017 - MAJ 28/02/2017
+/// \brief		Implementation de la classe ObjetPhysique
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "ObjetPhysique.h"
 
-/*******************************************************************************
-* Fonction:		ObjetPhysique::ObjetPhysique
-* Description:	Constructeur par defaut
-* Paramètres:	aucun
-* Retour:		aucun
-********************************************************************************/
 ObjetPhysique::ObjetPhysique() :
 	aire_				(Donnee("Aire")),
 	forme_				("indeterminee"),
@@ -26,45 +19,21 @@ ObjetPhysique::ObjetPhysique() :
 	centreDeMasse_[Z] = Donnee("Position en Z");
 }
 
-/*******************************************************************************
-* Fonction:		ObjetPhysique::obtenirForme
-* Description:	accessor de forme_
-* Paramètres:	aucun
-* Retour:		(Donnee) la forme de l'objet
-********************************************************************************/
 string ObjetPhysique::obtenirForme() const
 {
 	return forme_;
 }
 
-/*******************************************************************************
-* Fonction:		ObjetPhysique::obtenirAire
-* Description:	accessor de aire_
-* Paramètres:	aucun
-* Retour:		(Donnee) L'aire de l'objet
-********************************************************************************/
 Donnee ObjetPhysique::obtenirAire() const
 {
 	return aire_;
 }
 
-/*******************************************************************************
-* Fonction:		ObjetPhysique::obtenirVolume
-* Description:	accessor de volume_
-* Paramètres:	aucun
-* Retour:		(Donnee) le volume de l'objet
-********************************************************************************/
 Donnee ObjetPhysique::obtenirVolume() const
 {
 	return volume_;
 }
 
-/*******************************************************************************
-* Fonction:		ObjetPhysique::obtenirMasse
-* Description:	accessor de masse_
-* Paramètres:	aucun
-* Retour:		(Donnee) la masse de l'objet
-********************************************************************************/
 Donnee ObjetPhysique::obtenirMasse() const
 {
 	return masse_;
