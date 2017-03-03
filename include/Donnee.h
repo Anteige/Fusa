@@ -50,6 +50,9 @@ public:
 
 	Donnee operator^(const double& nombre) const;
 
+	Donnee& operator+=(const Donnee& nombre);
+	Donnee operator+=(const double& nombre);
+
 	friend ostream& operator<<(ostream& out, const Donnee& donnee);
 
 private:

@@ -298,6 +298,12 @@ Donnee Donnee::operator^(const double& nombre) const
 	return resultat;
 }
 
+Donnee& Donnee::operator+=(const Donnee& nombre)
+{
+	valeur_ = valeur_ + nombre.obtenirValeur();
+	return *this;
+}
+
 /********************************************************************************
 * Fonction:		Donnee::operator<<
 * Description:	permet l'affichage d'une donnee
