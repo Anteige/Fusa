@@ -1,7 +1,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 /// \author		Antoine Gaulin
 /// \file		Donnee.cpp
-/// \date		31/01/2017 - MAJ 28/02/2017
+/// \date		31/01/2017
 /// \brief		Implementation de la classe Donnee
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -169,22 +169,6 @@ Donnee Donnee::operator^(const double& nombre) const
 	return resultat;
 }
 
-<<<<<<< HEAD:Donnee.cpp
-=======
-Donnee& Donnee::operator+=(const Donnee& nombre)
-{
-	valeur_ = valeur_ + nombre.obtenirValeur();
-	return *this;
-}
-
-/********************************************************************************
-* Fonction:		Donnee::operator<<
-* Description:	permet l'affichage d'une donnee
-* Paramètres:	- (ostream) out : le flux de sortie
-				- (donnee)	donnee : la donnee a afficher
-* Retour:		(ostream) pour l'appel en cascade
-********************************************************************************/
->>>>>>> origin/master:src/Donnee.cpp
 ostream& operator<<(ostream& out, const Donnee& donnee)
 {
 	out << setfill(' ') << setprecision(2)
