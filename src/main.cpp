@@ -212,13 +212,13 @@ int main() {
 	Sleep(500);
 
 	NettoyerConsole(FALSE);
-	PlaySound(TEXT("./Fusa/soundtrack/Intro.wav"), NULL, SND_FILENAME | SND_ASYNC);
+	PlaySound(TEXT("./soundtrack/Intro.wav"), NULL, SND_FILENAME | SND_ASYNC);
 	afficherIntroduction();
 
 	NettoyerConsole(FALSE);
-	PlaySound(TEXT("./Fusa/soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME| 
-																 SND_ASYNC	 | 
-															  	 SND_LOOP);
+	PlaySound(TEXT("./soundtrack/MenuPrincipal.wav"), NULL, SND_FILENAME| 
+															SND_ASYNC	| 
+															SND_LOOP);
 
 	cout << fusee;
 	cout << fusee.obtenirPointe();
