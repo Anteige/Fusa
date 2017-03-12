@@ -8,55 +8,25 @@
 
 #include "../include/Aileron.h"
 
-/*******************************************************************************
-* Fonction:		Aileron::Aileron
-* Description:	Constructeur par defaut
-* Paramètres:	aucun
-* Retour:		aucun
-*******************************************************************************/
 Aileron::Aileron() : force_(Donnee("Force")), resistance_(Donnee("Resistance"))
 {
 }
 
-/*******************************************************************************
-* Fonction:		Aileron::obtenirForce
-* Description:	accessor de force_
-* Paramètres:	aucun
-* Retour:		(Donnee) la force de l'aileron
-*******************************************************************************/
 Donnee Aileron::obtenirForce() const
 {
 	return force_;
 }
 
-/*******************************************************************************
-* Fonction:		Aileron::obtenirResistance
-* Description:	accessor de resistance_
-* Paramètres:	aucun
-* Retour:		(Donnee) la resistance de l'aileron
-*******************************************************************************/
 Donnee Aileron::obtenirResistance() const
 {
 	return resistance_;
 }
 
-/*******************************************************************************
-* Fonction:		Aileron::mettreForce
-* Description:	mutator de force_
-* Paramètres:	- (Donnee) force :			a modifier (IN)
-* Retour:		aucun
-*******************************************************************************/
 void Aileron::mettreForce(const Donnee& force)
 {
 	force_ = force;
 }
 
-/*******************************************************************************
-* Fonction:		mettreResistance
-* Description:	mutator de resistance_
-* Paramètres:	- (Donnee) resistance :		a modifier (IN)
-* Retour:		aucun
-*******************************************************************************/
 void Aileron::mettreResistance(const Donnee& resistance)
 {
 	resistance_ = resistance;
