@@ -1,5 +1,4 @@
 ////////////////////////////////////////////////////////////////////////////////
-/// Fusa			version 1
 /// \auteur			Antoine Gaulin
 /// \fichier		Aileron.h
 /// \date			02/02/2017 - MAJ 24/02/2017
@@ -16,42 +15,48 @@ using namespace std;
 
 class Aileron : public ObjetPhysique
 {
+
 public:
+
 	///
-	///\brief 		Constructeur par defaut
+	/// \brief	Constructeur par defaut
 	///
 	Aileron();
-
 	
 	///
-	///\brief		accessor de force_
-	///\return		Donnee	 La force de l'aileron
+	/// \brief	accessor de force_
+	/// \return	Donnee	La force de l'aileron
 	///
-	Donnee	obtenirForce()		const;
+	Donnee	obtenirForce()	const;
 	
 	///
-	///\brief		accessor de resistance_
-	///\return		Donnee	 La resistance de l'aileron
+	/// \brief	accessor de resistance_
+	/// \return	Donnee	La resistance de l'aileron
 	///
 	Donnee	obtenirResistance()	const;
 
 	///
-	///\brief		mutator de force_
-	///\param		- Donnee	 force :			a modifier (IN)
+	/// \brief	mutator de force_
+	/// \param	Donnee	la nouvelle force de l'aileron						[in]
 	///
 	void	mettreForce(const Donnee& force);
 	
 	///
-	///\brief		mutator de resistance_
-	///\param		- Donnee 	resistance :		a modifier (IN)
+	///\brief	mutator de resistance_
+	///\param	Donnee	La nouvelle resistance de l'aileron					[in]
 	///
 	void	mettreResistance(const Donnee& resistance);
 
-	// Affichage
+	///
+	/// \brief	Permet l'affichage d'un Aileron
+	/// \param	Aileron	L'aileron a afficher							[in/out]
+	/// \param	out		Le flux de sortie								[in/out]
+	/// \return	ostream	Permet l'appel en cascade
+	///
 	friend ostream& operator<<(ostream& out, const Aileron& aileron);
 
 private:
-	// Attributs
+
 	Donnee	force_;
 	Donnee	resistance_;
 };

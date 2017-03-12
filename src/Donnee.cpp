@@ -171,9 +171,9 @@ Donnee Donnee::operator^(const double& nombre) const
 
 ostream& operator<<(ostream& out, const Donnee& donnee)
 {
-	out << setfill(' ') << setprecision(2)
-		<< setw(20)	<< right << donnee.nom_		<< "// " 
-		<< setw(20)	<< fixed << donnee.valeur_	<<  ' '
-		<< setw(20)	<< left	 << donnee.unite_	<< endl;
+	out << donnee.nom_		<< ' ' 
+		<< donnee.valeur_	<< ' '
+		<< donnee.unite_	<< ' '
+		<< endl;
 	return out;
 }

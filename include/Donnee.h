@@ -9,7 +9,6 @@
 #define _DONNEE_H_
 
 #include <string>
-#include <iomanip>
 
 using namespace std;
 
@@ -24,7 +23,7 @@ public:
 	/// \param	valeur	La valeur de la donnee								[in]
 	/// \param	unite 	L'unite de la donnee								[in]
 	///
-	Donnee(string nom = "Donnee sans nom", double valeur = 0.0, 
+	Donnee(string nom = "Donnee sans nom", double valeur = 0.0,
 										   string unite = "unites");
 
 	///

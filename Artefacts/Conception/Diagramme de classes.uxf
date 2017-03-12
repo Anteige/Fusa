@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>656</x>
-      <y>688</y>
+      <x>704</x>
+      <y>704</y>
       <w>160</w>
       <h>48</h>
     </coordinates>
@@ -15,8 +15,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>480</y>
+      <x>848</x>
+      <y>496</y>
       <w>224</w>
       <h>240</h>
     </coordinates>
@@ -26,8 +26,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>912</x>
-      <y>400</y>
+      <x>960</x>
+      <y>416</y>
       <w>160</w>
       <h>96</h>
     </coordinates>
@@ -40,8 +40,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>800</x>
-      <y>480</y>
+      <x>848</x>
+      <y>496</y>
       <w>432</w>
       <h>272</h>
     </coordinates>
@@ -51,8 +51,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1120</x>
-      <y>400</y>
+      <x>1168</x>
+      <y>416</y>
       <w>160</w>
       <h>96</h>
     </coordinates>
@@ -65,8 +65,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>656</x>
-      <y>400</y>
+      <x>704</x>
+      <y>416</y>
       <w>160</w>
       <h>96</h>
     </coordinates>
@@ -78,8 +78,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>416</x>
-      <y>400</y>
+      <x>464</x>
+      <y>416</y>
       <w>224</w>
       <h>96</h>
     </coordinates>
@@ -91,20 +91,21 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>656</x>
-      <y>816</y>
+      <x>704</x>
+      <y>832</y>
       <w>160</w>
       <h>96</h>
     </coordinates>
-    <panel_attributes>Trajectoire</panel_attributes>
+    <panel_attributes>Trajectoire
+--</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>192</x>
-      <y>400</y>
-      <w>160</w>
+      <x>240</x>
+      <y>416</y>
+      <w>192</w>
       <h>96</h>
     </coordinates>
     <panel_attributes>Moteur
@@ -115,8 +116,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>480</y>
+      <x>768</x>
+      <y>496</y>
       <w>48</w>
       <h>240</h>
     </coordinates>
@@ -126,8 +127,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>496</x>
-      <y>480</y>
+      <x>544</x>
+      <y>496</y>
       <w>192</w>
       <h>240</h>
     </coordinates>
@@ -137,8 +138,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>256</x>
-      <y>480</y>
+      <x>304</x>
+      <y>496</y>
       <w>432</w>
       <h>272</h>
     </coordinates>
@@ -148,8 +149,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>720</y>
+      <x>768</x>
+      <y>736</y>
       <w>48</w>
       <h>128</h>
     </coordinates>
@@ -159,8 +160,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>624</x>
-      <y>0</y>
+      <x>672</x>
+      <y>16</y>
       <w>208</w>
       <h>208</h>
     </coordinates>
@@ -178,8 +179,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>816</x>
-      <y>160</y>
+      <x>864</x>
+      <y>176</y>
       <w>208</w>
       <h>272</h>
     </coordinates>
@@ -189,8 +190,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>816</x>
-      <y>128</y>
+      <x>864</x>
+      <y>144</y>
       <w>416</w>
       <h>304</h>
     </coordinates>
@@ -200,8 +201,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
-      <y>192</y>
+      <x>768</x>
+      <y>208</y>
       <w>48</w>
       <h>240</h>
     </coordinates>
@@ -212,8 +213,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>160</y>
+      <x>528</x>
+      <y>176</y>
       <w>176</w>
       <h>272</h>
     </coordinates>
@@ -223,8 +224,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>256</x>
-      <y>128</y>
+      <x>304</x>
+      <y>144</y>
       <w>400</w>
       <h>304</h>
     </coordinates>
@@ -234,12 +235,36 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>752</x>
-      <y>192</y>
+      <x>800</x>
+      <y>208</y>
       <w>144</w>
       <h>528</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>40.0;10.0;40.0;80.0;70.0;80.0;70.0;240.0;10.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>32</x>
+      <y>96</y>
+      <w>160</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Carburant
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>80</x>
+      <y>176</y>
+      <w>192</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;180.0;100.0;180.0</additional_attributes>
   </element>
 </diagram>
