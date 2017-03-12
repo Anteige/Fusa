@@ -2,7 +2,7 @@
 /// \author		Antoine Gaulin
 /// \file		Carburant.h
 /// \date		02/02/2017
-/// \brief		Definition de la classe Donnee
+/// \brief		Definition de la classe Carburant
 ///////////////////////////////////////////////////////////////////////////////
 
 #ifndef _CARBURANT_H_
