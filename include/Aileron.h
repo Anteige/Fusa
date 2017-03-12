@@ -14,6 +14,7 @@
 using namespace std;
 
 class Aileron : public ObjetPhysique
+
 {
 
 public:
@@ -37,20 +38,20 @@ public:
 
 	///
 	/// \brief	mutator de force_
-	/// \param	Donnee	la nouvelle force de l'aileron						[in]
+	/// \param	Donnee	la nouvelle force de l'aileron					   [in]
 	///
 	void mettreForce(const Donnee& force);
 	
 	///
 	///\brief	mutator de resistance_
-	///\param	Donnee	La nouvelle resistance de l'aileron					[in]
+	///\param	Donnee	La nouvelle resistance de l'aileron				   [in]
 	///
 	void mettreResistance(const Donnee& resistance);
 
 	///
 	/// \brief	Permet l'affichage des parametres de l'Aileron
-	/// \param	Aileron	L'aileron a afficher							[in/out]
-	/// \param	out		Le flux de sortie								[in/out]
+	/// \param	Aileron	L'aileron a afficher						   [in/out]
+	/// \param	out		Le flux de sortie							   [in/out]
 	/// \return	ostream	Permet l'appel en cascade
 	///
 	friend ostream& operator<<(ostream& out, const Aileron& aileron);
@@ -59,6 +60,7 @@ private:
 
 	Donnee	force_;
 	Donnee	resistance_;
+
 };
 
 #endif // _AILERON_H_

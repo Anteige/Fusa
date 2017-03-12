@@ -15,6 +15,7 @@ using namespace std;
 
 class Carburant : public ObjetPhysique
 {
+
 public:
 
 	///
@@ -58,6 +59,7 @@ private:
 
 	Donnee	poussee_;
 	Donnee	pression_;
+
 };
 
 #endif // _CARBURANT_H_
