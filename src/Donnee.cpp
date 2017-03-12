@@ -6,7 +6,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 #include "iostream"
-#include "../include/Donnee.h"
+#include "Donnee.h"
 
 Donnee::Donnee(string nom, double valeur, string unite) :
 	nom_(nom), valeur_(valeur), unite_(unite)

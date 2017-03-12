@@ -6,7 +6,8 @@
 /// \description	Implementation de la classe Aileron
 ////////////////////////////////////////////////////////////////////////////////
 
-#include "../include/Aileron.h"
+#include "Aileron.h"
+#include <iomanip>
 
 Aileron::Aileron() : force_(Donnee("Force")), resistance_(Donnee("Resistance"))
 {
