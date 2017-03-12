@@ -19,7 +19,7 @@ class Aileron : public ObjetPhysique
 public:
 
 	///
-	/// \brief	Constructeur par defaut
+	/// \brief Constructeur par defaut
 	///
 	Aileron();
 	
@@ -27,28 +27,28 @@ public:
 	/// \brief	accessor de force_
 	/// \return	Donnee	La force de l'aileron
 	///
-	Donnee	obtenirForce()	const;
+	Donnee obtenirForce() const;
 	
 	///
 	/// \brief	accessor de resistance_
 	/// \return	Donnee	La resistance de l'aileron
 	///
-	Donnee	obtenirResistance()	const;
+	Donnee obtenirResistance() const;
 
 	///
 	/// \brief	mutator de force_
 	/// \param	Donnee	la nouvelle force de l'aileron						[in]
 	///
-	void	mettreForce(const Donnee& force);
+	void mettreForce(const Donnee& force);
 	
 	///
 	///\brief	mutator de resistance_
 	///\param	Donnee	La nouvelle resistance de l'aileron					[in]
 	///
-	void	mettreResistance(const Donnee& resistance);
+	void mettreResistance(const Donnee& resistance);
 
 	///
-	/// \brief	Permet l'affichage d'un Aileron
+	/// \brief	Permet l'affichage des parametres de l'Aileron
 	/// \param	Aileron	L'aileron a afficher							[in/out]
 	/// \param	out		Le flux de sortie								[in/out]
 	/// \return	ostream	Permet l'appel en cascade

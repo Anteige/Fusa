@@ -1,6 +1,0 @@
-================================================================================
-	Document de vision						21/02/17
-================================================================================
-
-On veut pouvoir entrer les paramètres d'une fusée dans un logiciel de façon à la 
-tester numériquement pour savoir si il serait possible de la lancer.
