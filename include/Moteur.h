@@ -12,8 +12,6 @@
 #include "ObjetPhysique.h"
 #include "Donnee.h"
 
-//FUCK YOU ANTOINE
-
 using namespace std;
 
 class Moteur : public ObjetPhysique
