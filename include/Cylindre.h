@@ -1,9 +1,8 @@
-////////////////////////////////////////////////////////////////////////////////
-/// Fusa			version 1
-/// \auteur			Antoine Gaulin
-/// \fichier		Cylindre.h
-/// \date			02/02/2017 - MAJ 07/02/2017
-/// \description	Definition de la classe Cylindre
+///////////////////////////////////////////////////////////////////////////////
+/// \author		Antoine Gaulin
+/// \file		Cylindre.h
+/// \date		02/02/2017
+/// \brief		Definition de la classe Cylindre
 ////////////////////////////////////////////////////////////////////////////////
 
 #ifndef _CYLINDRE_H_
@@ -17,16 +16,30 @@ using namespace std;
 class Cylindre : public ObjetPhysique
 {
 public:
-	// Constructeur par defaut.
+
+	///
+	///\brief	Constructeur par defaut
+	///
 	Cylindre();
 
-	// Methodes d'acces.
-	Donnee	obtenirPressionMaximale()	const;
+	///
+	///\brief 	accessor de pressionMaximale_
+	///\return 	Donnee 	La pression maximale du cylindre
+	///
+	Donnee obtenirPressionMaximale()	const;
 
-	// Methodes de modifications.
-	void	mettrePressionMaximale(Donnee pressionMaximale);
+	///
+	///\brief 	mutator de pressionMaximale_
+	///\param 	Donnee 	La nouvelle pression maximale du carburant		   [in]
+	///
+	void mettrePressionMaximale(Donnee pressionMaximale);
 
-	// Affichage
+	///
+	/// \brief	Permet l'affichage du Cylindre
+	/// \param	Cylindre	le cylindre a afficher					   [in/out]
+	/// \param	out			Le flux de sortie						   [in/out]
+	/// \return	ostream		Permet l'appel en cascade
+	///
 	friend ostream& operator<<(ostream& out, const Cylindre& cylindre);
 
 private:
