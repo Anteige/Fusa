@@ -24,19 +24,19 @@ public:
 
 	///
 	///\brief 	accessor de pressionMaximale_
-	///\return 	Donnee 	La pression maximale du cylindre
+	///\return 	Donnee 		La pression maximale du cylindre
 	///
 	Donnee obtenirPressionMaximale()	const;
 
 	///
-	///\brief 	mutator de pressionMaximale_
-	///\param 	Donnee 	La nouvelle pression maximale du carburant		   [in]
+	///\brief	mutator de pressionMaximale_
+	///\param	pressionMax La nouvelle pression maximale du carburant     [in]
 	///
-	void mettrePressionMaximale(Donnee pressionMaximale);
+	void mettrePressionMaximale(Donnee pressionMax);
 
 	///
 	/// \brief	Permet l'affichage du Cylindre
-	/// \param	Cylindre	le cylindre a afficher					   [in/out]
+	/// \param	cylindre	le cylindre a afficher					   [in/out]
 	/// \param	out			Le flux de sortie						   [in/out]
 	/// \return	ostream		Permet l'appel en cascade
 	///
