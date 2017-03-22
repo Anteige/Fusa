@@ -1,10 +1,9 @@
-////////////////////////////////////////////////////////////////////////////////
-/// Fusa			version 1
-/// \auteur			Antoine Gaulin
-/// \fichier		Trajectoire.h
-/// \date			07/02/2017
-/// \description	Definition de la classe Trajectoire
-////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+/// \author		Antoine Gaulin
+/// \file		Trajectoire.h
+/// \date		07/02/2017
+/// \brief		Definition de la classe Trajectoire
+///////////////////////////////////////////////////////////////////////////////
 
 #ifndef _TRAJECTOIRE_H_
 #define _TRAJECTOIRE_H_
@@ -15,28 +14,64 @@ using namespace std;
 
 class Trajectoire
 {
+
 public:
-	// Constructeurs.
+	
+	///
+	///\brief Constructeur par default
+	///
 	Trajectoire();
 
-	// Methodes d'acces.
-	Donnee	obtenirAltitudeMax()	const;
-	Donnee	obtenirDistance()		const;
-	Donnee	obtenirTemps()			const;
+	///
+	///\brief Accessor de altitudeMax_
+	///\return	Donnee		L'altitude maximale de la trajectoire
+	///
+	Donnee obtenirAltitudeMax() const;
 
-	// Methodes de modifications.
-	void	mettreAltitudeMax(Donnee altitudeMax);
-	void	mettreDistance(Donnee distance);
-	void	mettreTemps(Donnee temps);
+	///
+	///\brief Accessor de distance_
+	///\return	Donnee		La distance parcourue par la trajectoire
+	///
+	Donnee obtenirDistance() const;
 
-	// Affichage
+	///
+	///\brief Accessor de temps_
+	///\return	Donnee		Le temps requis par la trajectoire
+	///
+	Donnee obtenirTemps() const;
+
+	///
+	///\brief Mutator de altitudeMax_
+	///\return	altitudeMax	la nouvelle altitude maximale de la trajectoire
+	///
+	void mettreAltitudeMax(Donnee altitudeMax);
+
+	///
+	///\brief Mutator de distance_
+	///\return	distance	la nouvelle distance de la trajectoire
+	///
+	void mettreDistance(Donnee distance);
+
+	///
+	///\brief Mutator de temps_
+	///\return	temps		le nouveau temps de la trajectoire
+	///
+	void mettreTemps(Donnee temps);
+
+	///
+	/// \brief	Permet l'affichage des parametres de la trajectoire
+	/// \param	Trajectoire	L'aileron a afficher [in/out]
+	/// \param	out			Le flux de sortie [in/out]
+	/// \return	ostream&	Permet l'appel en cascade
+	///
 	friend ostream& operator<<(ostream& out, const Trajectoire& trajectoire);
 
 private:
-	// Attributs
+
 	Donnee	altitudeMax_;
 	Donnee	distance_;
 	Donnee	temps_;
+
 };
 
 #endif // _TRAJECTOIRE_H_

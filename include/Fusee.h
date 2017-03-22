@@ -100,8 +100,8 @@ public:
 
 	///
 	/// \brief	Permet l'affichage de la fusee
-	/// \param	Fusee		le fusee a afficher						   [in/out]
-	/// \param	out			Le flux de sortie						   [in/out]
+	/// \param	Fusee		le fusee a afficher [in/out]
+	/// \param	out			Le flux de sortie [in/out]
 	/// \return	ostream		Permet l'appel en cascade
 	///
 	friend ostream & operator<<(ostream & out, const Fusee& fusee);

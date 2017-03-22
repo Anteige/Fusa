@@ -37,20 +37,20 @@ public:
 
 	///
 	///\brief 	mutator de poussee_
-	///\param 	Donnee 	La nouvelle poussee du carburant				   [in]
+	///\param 	Donnee 	La nouvelle poussee du carburant
 	///
 	void mettrePoussee(const Donnee& poussee);
 
 	///
 	///\brief 	mutator de pression_
-	///\param 	Donnee 	La nouvelle pression du carburant				   [in]
+	///\param 	Donnee 	La nouvelle pression du carburant
 	///
 	void mettrePression(const Donnee& pression);
 
 	///
 	/// \brief	Permet l'affichage du carburant
-	/// \param	Carburant	le carburant a afficher					   [in/out]
-	/// \param	out			Le flux de sortie						   [in/out]
+	/// \param	Carburant	le carburant a afficher [in/out]
+	/// \param	out			Le flux de sortie [in/out]
 	/// \return	ostream		Permet l'appel en cascade
 	///
 	friend ostream& operator<<(ostream& out, const Carburant& carburant);

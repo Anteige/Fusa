@@ -30,20 +30,20 @@ public:
 
 	///
 	///\brief	mutator de pressionMaximale_
-	///\param	pressionMax La nouvelle pression maximale du carburant     [in]
+	///\param	pressionMax La nouvelle pression maximale du carburant
 	///
 	void mettrePressionMaximale(Donnee pressionMax);
 
 	///
 	/// \brief	Permet l'affichage du Cylindre
-	/// \param	cylindre	le cylindre a afficher					   [in/out]
-	/// \param	out			Le flux de sortie						   [in/out]
+	/// \param	cylindre	le cylindre a afficher [in/out]
+	/// \param	out			Le flux de sortie [in/out]
 	/// \return	ostream		Permet l'appel en cascade
 	///
 	friend ostream& operator<<(ostream& out, const Cylindre& cylindre);
 
 private:
-	// Attributs
+
 	Donnee	pressionMaximale_;
 };
 

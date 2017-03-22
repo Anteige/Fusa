@@ -36,8 +36,8 @@ public:
 
 	///
 	/// \brief	Permet l'affichage du moteur
-	/// \param	Moteur		le moteur a afficher					   [in/out]
-	/// \param	out			Le flux de sortie						   [in/out]
+	/// \param	Moteur		le moteur a afficher [in/out]
+	/// \param	out			Le flux de sortie [in/out]
 	/// \return	ostream		Permet l'appel en cascade
 	///
 	friend ostream& operator<<(ostream& out, const Moteur& moteur);
