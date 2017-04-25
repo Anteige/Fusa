@@ -6,34 +6,47 @@
 /// \description	Implementation de la classe Carburant
 ////////////////////////////////////////////////////////////////////////////////
 
+
 #include "../include/Carburant.h"
 
-Carburant::Carburant() : 
-	poussee_(Donnee("Poussee")), pression_(Donnee("Pression"))
+
+Carburant::Carburant()
 {
+	poussee_ = Donnee( "Poussee" );
+	pression_ = Donnee( "Pression" );
 }
 
-Donnee Carburant::obtenirPoussee() const
+
+Donnee
+Carburant::obtenirPoussee() const
 {
 	return poussee_;
 }
 
-Donnee Carburant::obtenirPression() const
+
+Donnee
+Carburant::obtenirPression() const
 {
 	return pression_;
 }
 
-void Carburant::mettrePoussee(const Donnee& poussee)
+
+void
+Carburant::mettrePoussee(const Donnee& poussee)
 {
 	poussee_ = poussee;
 }
 
-void Carburant::mettrePression(const Donnee& pression)
+
+void
+Carburant::mettrePression(const Donnee& pression)
 {
 	pression_ = pression;
 }
 
-ostream& operator<<(ostream& out, const Carburant& carburant)
+
+ostream&
+operator<<(ostream& out, const Carburant& carburant)
 {
 	out << "___________________________________________________________" << endl
 		<< "Voici les parametres du carburant / " << endl << endl

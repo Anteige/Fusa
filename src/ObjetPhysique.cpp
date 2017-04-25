@@ -1,22 +1,24 @@
 ////////////////////////////////////////////////////////////////////////////////
 /// \author		Antoine Gaulin
 /// \file		ObjetPhysique.cpp
-/// \date		07/02/2017 - MAJ 28/02/2017
+/// \date		07/02/2017
 /// \brief		Implementation de la classe ObjetPhysique
 ////////////////////////////////////////////////////////////////////////////////
 
+
 #include "../include/ObjetPhysique.h"
 
-ObjetPhysique::ObjetPhysique() :
-	aire_				(Donnee("Aire")),
-	forme_				("indeterminee"),
-	masse_				(Donnee("Masse")),
-	temperature_		(Donnee("Temperature")),
-	volume_				(Donnee("Volume"))
+
+ObjetPhysique::ObjetPhysique()
 {
-	centreDeMasse_[X] = Donnee("Position en X");
-	centreDeMasse_[Y] = Donnee("Position en Y");
-	centreDeMasse_[Z] = Donnee("Position en Z");
+	aire_ = Donnee( "Aire" );
+	forme_ = "indeterminee";
+	masse_ = Donnee( "Masse" );
+	temperature_ = Donnee( "Temperature" );
+	volume_ = Donnee( "Volume" );
+	centreDeMasse_[X] = Donnee( "Position en X" );
+	centreDeMasse_[Y] = Donnee( "Position en Y" );
+	centreDeMasse_[Z] = Donnee( "Position en Z" );
 }
 
 string ObjetPhysique::obtenirForme() const

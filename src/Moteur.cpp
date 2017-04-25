@@ -8,21 +8,29 @@
 
 #include "../include/Moteur.h"
 
-Moteur::Moteur() : poussee_(Donnee("Poussee"))
+
+Moteur::Moteur()
 {
+	poussee_ = Donnee( "Poussee" );
 }
 
-Donnee Moteur::obtenirPoussee() const
+
+Donnee 
+Moteur::obtenirPoussee() const
 {
 	return poussee_;
 }
 
-void Moteur::mettrePoussee(Donnee poussee)
+
+void 
+Moteur::mettrePoussee(Donnee poussee)
 {
 	poussee_ = poussee;
 }
 
-ostream & operator<<(ostream & out, const Moteur & moteur)
+
+ostream& 
+operator<<(ostream & out, const Moteur & moteur)
 {
 	out << setfill(' ')
 		<< "___________________________________________________________" << endl

@@ -5,33 +5,47 @@
 /// \description	Implementation de la classe Aileron
 ///////////////////////////////////////////////////////////////////////////////
 
-#include "Aileron.h"
 
-Aileron::Aileron() : force_(Donnee("Force")), resistance_(Donnee("Resistance"))
+#include "../include/Aileron.h"
+
+
+Aileron::Aileron()
 {
+	force_ = Donnee( "Force" );
+	resistance_ = Donnee( "Resistance" );
 }
 
-Donnee Aileron::obtenirForce() const
+
+Donnee 
+Aileron::obtenirForce() const
 {
 	return force_;
 }
 
-Donnee Aileron::obtenirResistance() const
+
+Donnee
+Aileron::obtenirResistance() const
 {
 	return resistance_;
 }
 
-void Aileron::mettreForce(const Donnee& force)
+
+void 
+Aileron::mettreForce(const Donnee& force)
 {
 	force_ = force;
 }
 
-void Aileron::mettreResistance(const Donnee& resistance)
+
+void
+Aileron::mettreResistance(const Donnee& resistance)
 {
 	resistance_ = resistance;
 }
 
-ostream & operator<<(ostream & out, const Aileron & aileron)
+
+ostream&
+operator<<(ostream & out, const Aileron & aileron)
 {
 	out << setfill(' ')
 		<< "___________________________________________________________" << endl

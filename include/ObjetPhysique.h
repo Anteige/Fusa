@@ -2,23 +2,26 @@
 /// \author		Antoine Gaulin
 /// \file		ObjetPhysique.h
 /// \date		07/02/2017
-/// \brief		Definition de la classe ObjetPhysique
+/// \brief		Definition de la classe ObjetPhysique.
 ///////////////////////////////////////////////////////////////////////////////
+
 
 #ifndef _OBJETPHYSIQUE_H_
 #define _OBJETPHYSIQUE_H_
 
+
 #include "Donnee.h"
+
 
 using namespace std;
 
+
 enum Axes { X, Y, Z, N_AXES };
+
 
 class ObjetPhysique
 {
-
 public:
-
 	///
 	/// \brief	Constructeur par defaut
 	///
@@ -60,8 +63,7 @@ public:
 	void	mettreAire(const Donnee& aire);
 	void	mettreVolume(const Donnee& volume);
 	void	mettreMasse(const Donnee& masse);
-	void	mettreCentreDeMasse(const Donnee& pointX,
-								const Donnee& pointY,
+	void	mettreCentreDeMasse(const Donnee& pointX, const Donnee& pointY,
 								const Donnee& pointZ);
 	void	mettreTemperature(const Donnee& temperature);
 
